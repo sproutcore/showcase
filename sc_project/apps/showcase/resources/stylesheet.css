@@ -1,0 +1,181 @@
+@import "compass/css3";
+@import "compass/css3/user-interface";
+
+$theme.views-list-view {
+  background-color: #bcc7d0;
+}
+
+$theme.views-item-view {
+  border-bottom: 1px solid #97a0a7;
+  border-top: 1px solid #d3e0ea;
+
+  .example-box {
+    @include border-radius(7px);
+    @include box-shadow(rgb(255,255,255) 0px 0px 6px 3px);
+    @include slice('images/example-box-bg.png', $repeat: repeat);
+  }
+
+  .sc-disclosure-view {
+    line-height: 30px;
+
+    .disclosure {
+      margin-top: -5px;
+      top: 50%;
+    }
+
+    .sc-button-label {
+      text-decoration: underline;
+    }
+  }
+
+  .sc-text-field-view.snippet-field {
+    background-color: #e6f4ff;
+    font-family: Menlo, Monaco, monospace;
+    font-size: 13px;
+  }
+
+  .sc-text-field-view.centered-field {
+    .field {
+      text-align: center;
+    }
+  }
+
+  .title-label {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: right;
+    text-shadow: rgba(0,0,0,0.3) 0px -1px 1px;
+  }
+}
+
+
+$theme.grid-example-view {
+  .sc-label-view {
+    text-align: center;
+  }
+}
+
+
+$theme.sc-image-button-view.my-image-button {
+  @include border-radius(4px);
+  @include box-shadow(rgba(0,0,0,0.3) 0px 1px 3px);
+  background-color: #ececec;
+  border: 1px solid #7f7f7f;
+
+  .img {
+    margin: 4px;
+  }
+
+  &.active {
+    @include box-shadow(none);
+    background-color: #d0d7db;
+  }
+}
+
+
+$theme.sc-image-view.my-image-view {
+  background-color: #ececec;
+  border: 1px solid #7f7f7f;
+}
+
+
+$theme.sc-label-view.my-label-view {
+  text-align: center;
+
+  &.icon img {
+    margin-right: 3px;
+  }
+
+  &.sc-tiny-size {
+    line-height: 11px;
+
+    &.icon img {
+      top: -2px;
+    }
+  }
+
+  &.sc-small-size {
+    line-height: 15px;
+
+    &.icon img {
+      top: -2px;
+    }
+  }
+
+  &.sc-regular-size {
+    line-height: 16px;
+
+    &.icon img {
+      top: -1px;
+    }
+  }
+
+  &.sc-large-size {
+    line-height: 24px;
+
+    &.icon img {
+      margin-right: 4px;
+      top: -4px;
+    }
+  }
+}
+
+
+$theme.sc-list-view.my-list-view {
+  .sc-list-item-view img.icon {
+    margin-top: -12px;
+  }
+
+  .sc-list-item-view.has-checkbox img.icon {
+    left: 29px;
+  }
+
+  .sc-list-item-view.has-checkbox.has-icon label {
+    left: 58px;
+  }
+}
+
+
+$theme.sc-scroll-view.my-scroll-view {
+  background-color: #ececec;
+  border: 1px solid #7f7f7f;
+}
+
+
+$theme.sc-label-view.blue-sample-view {
+  background-color: #8de1ff;
+  color: white;
+  font-size: 60px;
+  line-height: 260px;
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.3) 0px 1px 2px;
+}
+
+$theme.sc-label-view.red-sample-view {
+  background-color: #ff6d7a;
+  color: white;
+  font-size: 60px;
+  line-height: 260px;
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.4) 0px 1px 2px;
+}
+
+$theme.sc-label-view.green-sample-view {
+  background-color: #a9ff85;
+  color: white;
+  font-size: 60px;
+  line-height: 500px;
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.4) 0px 1px 2px;
+}
+
+$theme.sc-label-view.pink-sample-view {
+  background-color: #fdaeff;
+  color: white;
+  font-size: 60px;
+  line-height: 110px;
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.4) 0px 1px 2px;
+}
