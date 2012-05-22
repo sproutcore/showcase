@@ -19,7 +19,7 @@ Showcase.mainPage = SC.Page.design({
       tagName: 'header',
       render: function(context, firstTime) {
         context.attr('role', 'banner');
-        context.push('<div class="container"><h1 id="logo"><a href="http://www.sproutcore.com"><img src="' + sc_static('images/logo.png') + '" alt="SproutCore"></a></h1><nav role="navigation"><ul><li><a href="http://www.sproutcore.com/about/">About</a></li><li><a href="http://guides.sproutcore.com">Guides</a></li><li><a href="http://docs.sproutcore.com">Docs</a></li><li class="active"><a href="/">Showcase</a></li><li><a href="http://www.sproutcore.com/community/">Community</a></li><li><a href="http://blog.sproutcore.com">Blog</a></li></ul></nav></div>');
+        context.push('<div class="container"><h1 id="logo"><a href="http://www.sproutcore.com"><img src="' + sc_static('images/logo.png') + '" alt="SproutCore"></a></h1><nav role="navigation"><ul><li><a href="http://www.sproutcore.com/about/">About</a></li><li class="active"><a href="/">Showcase</a></li><li><a href="http://guides.sproutcore.com">Guides</a></li><li><a href="http://docs.sproutcore.com">Docs</a></li><li><a href="http://www.sproutcore.com/community/">Community</a></li><li><a href="http://blog.sproutcore.com">Blog</a></li></ul></nav></div>');
       }
     }),
 
