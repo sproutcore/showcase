@@ -1,0 +1,80 @@
+/* Base
+--------------------------------------------- */
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+i {
+  font-style: italic;
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+/* Banner
+--------------------------------------------- */
+
+header[role="banner"] {
+  overflow: hidden;
+  border-bottom: 1px solid #000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.9);
+  z-index: 999;
+  background: sc_static('images/pixels.png') repeat-x, sc_static('images/cross.png') #225782;
+  -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5), inset 0 -1px 0 rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5), inset 0 -1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5), inset 0 -1px 0 rgba(255, 255, 255, 0.2);
+}
+
+#logo,
+[role="banner"] nav,
+[role="banner"] form {
+  float: left;
+}
+
+/* Logo */
+
+#logo {
+  margin-top: 11px;
+  width: 160px;
+}
+
+/* Navigation */
+
+[role="banner"] nav {
+  width: 600px;
+  text-align: center;
+}
+
+[role="banner"] nav li {
+  display: inline-block;
+  padding: 16px 15px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+}
+
+[role="banner"] nav li.active {
+  background: sc_static('images/glow.png') no-repeat 50% 0;
+}
+
+[role="banner"] nav li.disabled {
+  opacity: 0.25;
+}
+
+[role="banner"] nav a:link,
+[role="banner"] nav a:visited {
+  color: #fff;
+}
+
+[role="banner"] nav a:hover,
+[role="banner"] nav .active a {
+  color: #7dbcff;
+}
+
+/* Links */
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+

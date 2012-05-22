@@ -19,7 +19,7 @@ Showcase.mainPage = SC.Page.design({
       tagName: 'header',
       render: function(context, firstTime) {
         context.attr('role', 'banner');
-        context.push('<div class="container"><h1 id="logo"><a href="http://www.sproutcore.com"><img src="/img/logo.png" alt="SproutCore"></a></h1><nav role="navigation"><ul><li><a href="http://www.sproutcore.com/about/">About</a></li><li><a href="http://guides.sproutcore.com">Guides</a></li><li class="active"><a href="/">Docs</a></li><li><a href="http://www.sproutcore.com/showcase/">Showcase</a></li><li><a href="http://www.sproutcore.com/community/">Community</a></li><li><a href="http://blog.sproutcore.com">Blog</a></li></ul></nav></div>');
+        context.push('<div class="container"><h1 id="logo"><a href="http://www.sproutcore.com"><img src="' + sc_static('images/logo.png') + '" alt="SproutCore"></a></h1><nav role="navigation"><ul><li><a href="http://www.sproutcore.com/about/">About</a></li><li><a href="http://guides.sproutcore.com">Guides</a></li><li><a href="http://docs.sproutcore.com">Docs</a></li><li class="active"><a href="/">Showcase</a></li><li><a href="http://www.sproutcore.com/community/">Community</a></li><li><a href="http://blog.sproutcore.com">Blog</a></li></ul></nav></div>');
       }
     }),
 
@@ -47,7 +47,7 @@ Showcase.mainPage = SC.Page.design({
     classNames: ['welcome-view'],
     content: "<h1>SproutCore Showcase</h1>\
           <h2>Views &amp; Controls</h2>\
-          <p>SproutCore is bundled with a wide array of controls for you to use within your own applications.  This allows you to build a fully functioning professional looking application very quickly and to iteratively apply a private theme if necessary.</p> \
+          <p>SproutCore is bundled with a wide array of controls for you to use within your own applications.  This allows you to build a fully functioning professional looking application very quickly and to iteratively apply a different theme if necessary.</p> \
           <p>Select the Classes on the left to view examples of each.</p>\
           <footer>Some icons by <a href=\"http://p.yusukekamiyamane.com/\">Yusuke Kamiyamane</a>. All rights reserved.</footer>"
   })
