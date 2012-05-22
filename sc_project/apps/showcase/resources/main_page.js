@@ -29,21 +29,27 @@ Showcase.mainPage = SC.Page.design({
       masterView: SC.ScrollView.design({
 
         contentView: SC.SourceListView.design({
+          classNames: ['main-source-list'],
           contentBinding: SC.Binding.oneWay('Showcase.sourceTreeController.arrangedObjects'),
-          contentExampleViewKey: 'rowClass',
-          contentGroupExampleViewKey: 'groupClass',
-          contentIconKey: 'icon',
           contentValueKey: 'name',
-          delegate: Showcase.sourceTreeController,
-          hasContentIcon: YES,
           selectionBinding: SC.Binding.from('Showcase.sourceTreeController.selection')
         })
       }),
 
       detailView: SC.ContainerView.design({
-        nowShowingBinding: SC.Binding.oneWay('Showcase.sourceController.view')
+        nowShowing: 'Showcase.mainPage.welcomeView',
+        nowShowingBinding: SC.Binding.notEmpty('Showcase.sourceController.view', 'Showcase.mainPage.welcomeView')
       })
     })
+  }),
+
+  welcomeView: SC.StaticContentView.design({
+    classNames: ['welcome-view'],
+    content: "<h1>SproutCore Showcase</h1>\
+          <h2>Views &amp; Controls</h2>\
+          <p>SproutCore is bundled with a wide array of controls for you to use within your own applications.  This allows you to build a fully functioning professional looking application very quickly and to iteratively apply a private theme if necessary.</p> \
+          <p>Select the Classes on the left to view examples of each.</p>\
+          <footer>Some icons by <a href=\"http://p.yusukekamiyamane.com/\">Yusuke Kamiyamane</a>. All rights reserved.</footer>"
   })
 
 });

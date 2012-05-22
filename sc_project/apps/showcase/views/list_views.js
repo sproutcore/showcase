@@ -15,7 +15,15 @@ Showcase.listViews = SC.ScrollView.design({
     content: [
       Showcase.ViewsItemContent.create({
         title: 'Regular',
-        example: "SC.ScrollView.extend({  layout: { left: 20, right: 20, top: 20, bottom: 20 },  contentView:  SC.ListView.extend({  classNames: ['my-list-view'],  rowHeight: 48,  contentBinding: SC.Binding.oneWay('Showcase.collectionItems'),  exampleView: SC.ListItemView.extend({  hasContentIcon: true,  hasContentRightIcon: true,  contentCheckboxKey: 'isSelected',  contentIconKey: 'icon',  contentRightIconKey: 'rightIcon',  contentValueKey: 'title'  })  })  })"
+        example: "SC.ScrollView.extend({  classNames: ['my-scroll-view'],  layout: { left: 20, right: 20, top: 20, bottom: 20 },  contentView:  SC.ListView.extend({  classNames: ['my-list-view'],  rowHeight: 48,  contentBinding: SC.Binding.oneWay('Showcase.collectionItems'),  exampleView: SC.ListItemView.extend({  hasContentIcon: true,  hasContentRightIcon: true,  contentCheckboxKey: 'isSelected',  contentIconKey: 'icon',  contentRightIconKey: 'rightIcon',  contentValueKey: 'title'  })  })  })"
+      }),
+      Showcase.ViewsItemContent.create({
+        title: 'Editable',
+        example: "SC.ScrollView.extend({  classNames: ['my-scroll-view'],  layout: { left: 20, right: 20, top: 20, bottom: 20 },  contentView:  SC.ListView.extend({  canDeleteContent: true,  canEditContent: true,  canReorderContent: true,  classNames: ['my-list-view'],  rowHeight: 48,  contentBinding: SC.Binding.oneWay('Showcase.editableCollectionItems'),  exampleView: SC.ListItemView.extend({  hasContentIcon: true,  hasContentRightIcon: true,  contentCheckboxKey: 'isSelected',  contentIconKey: 'icon',  contentRightIconKey: 'rightIcon',  contentValueKey: 'title'  })  })  })",
+        supportAction: function() {
+          Showcase.propertyDidChange('editableCollectionItems');
+        },
+        supportTitle: 'Reset Content'
       })
     ],
     exampleHeight: 420

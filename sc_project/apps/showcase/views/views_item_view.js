@@ -10,11 +10,11 @@
 */
 Showcase.ViewsItemView = SC.View.extend({
 
-  childViews: ['titleLabel', 'exampleBox', 'supportButton', 'disclosure', 'snippetField'],
-
   classNames: ['views-item-view'],
 
   content: null,
+
+  isLastItem: false,
 
   /**
     Returns the layout for the example box.
@@ -25,6 +25,15 @@ Showcase.ViewsItemView = SC.View.extend({
 
     return { left: 60, top: 60, right: 60, height: exampleHeight }
   }.property().cacheable(),
+
+  /** @private */
+  render: function(context, firstTime) {
+    var isLastItem = this.get('isLastItem');
+
+    if (isLastItem) { context.addClass('last-item'); }
+  },
+
+  childViews: ['titleLabel', 'exampleBox', 'supportButton', 'disclosure', 'snippetField'],
 
   titleLabel: SC.LabelView.design({
     classNames: ['title-label'],

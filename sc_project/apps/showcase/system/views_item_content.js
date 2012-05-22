@@ -44,9 +44,9 @@ Showcase.ViewsItemContent = SC.Object.extend({
         example = this.get('example');
 
     // Remove the HTML formatting from the snippet.
-    el = document.createElement("div");
-    el.innerHTML = example;
-    example = el.textContent || el.innerText;
+    // el = document.createElement("div");
+    // el.innerHTML = example;
+    // example = el.textContent || el.innerText;
 
     // Return the JavaScript interpretation.
     return eval(example);

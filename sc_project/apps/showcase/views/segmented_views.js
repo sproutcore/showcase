@@ -79,7 +79,7 @@ Showcase.segmentedViews = SC.ScrollView.design({
           view2.remeasure();
         },
         supportTitle: 'Toggle Width'
-      }),
+      })
     ]
   })
 });

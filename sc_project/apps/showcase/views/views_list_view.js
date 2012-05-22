@@ -40,6 +40,21 @@ Showcase.ViewsListView = SC.ListView.extend({
 
     snippetHeight: 170,
 
+    contentIndexesInRect: function(rect) {
+      return null; // select all
+    },
+
+    contentIndexRowHeight: function(view, content, contentIndex) {
+      return this.get('rowHeight') + 170;
+    },
+
+    createItemView: function(exampleClass, idx, attrs) {
+      var length = this.get('length');
+      attrs.isLastItem = idx + 1 == length;
+
+      return exampleClass.create(attrs);
+    },
+
     init: function() {
       sc_super();
 
@@ -47,10 +62,6 @@ Showcase.ViewsListView = SC.ListView.extend({
       for (var i = content.get('length') - 1; i >= 0; i--) {
         content.objectAt(i).addObserver('isShowingSnippet', this, this._sclv_customRowHeightIndexesDidChange);
       }
-    },
-
-    contentIndexRowHeight: function(view, content, contentIndex) {
-      return this.get('rowHeight') + 170;
     }
 
 });

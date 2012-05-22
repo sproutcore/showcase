@@ -40,7 +40,7 @@ Showcase.labelViews = SC.ScrollView.design({
           label.beginEditing();
         },
         supportTitle: 'Manually Start Editing'
-      }),
+      })
     ],
 
     exampleView: Showcase.ViewsItemView.extend({
