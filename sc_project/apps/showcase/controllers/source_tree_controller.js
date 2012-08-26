@@ -8,12 +8,14 @@
 /**
   The source objects.
 */
-Showcase.sources = SC.Object.create({
+Showcase.sources = SC.Object.create(SC.CollectionContent, SC.TreeItemContent, {
 
   treeItemIsExpanded: true,
 
+  treeItemIsGrouped: true,
+
   treeItemChildren: [
-    SC.Object.create({
+    SC.Object.create(SC.TreeItemContent, {
       treeItemIsExpanded: true,
       group: true,
       name: "Views & Controls",

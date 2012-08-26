@@ -17,7 +17,7 @@ Showcase = SC.Application.create(
 
   VERSION: '0.1.0',
 
-  // Used by the List and Grid views.
+  // Used by the List and Grid view examples.
   collectionItems: function() {
     var collectionItems = [],
         icons = ['sc-icon-alert-24', 'sc-icon-bookmark-24', 'sc-icon-cancel-24', 'sc-icon-document-24', 'sc-icon-down-24', 'sc-icon-favorite-24', 'sc-icon-folder-24', 'sc-icon-group-24', 'sc-icon-help-24', 'sc-icon-info-24', 'sc-icon-left-24', 'sc-icon-options-24', 'sc-icon-redo-24', 'sc-icon-right-24', 'sc-icon-tools-24', 'sc-icon-trash-24', 'sc-icon-undo-24', 'sc-icon-up-24', 'sc-icon-user-24' ];
@@ -40,7 +40,7 @@ Showcase = SC.Application.create(
     return SC.copy(collectionItems, true);
   }.property().cacheable(),
 
-  // Used by the SourceList view.
+  // Used by the SourceList view example.
   sourceListTree: function() {
     var sourceListTree;
 
