@@ -46,6 +46,10 @@ Showcase.segmentedViews = SC.ScrollView.design({
         supportTitle: 'Reset Value'
       }),
       Showcase.ViewsItemContent.create({
+        title: 'Vertical',
+        example: "SC.View.extend({  childViews: ['regular', 'large'],  regular: SC.SegmentedView.extend({  layout: { width: 120, height: 72, centerX: -70, centerY: 0 },  layoutDirection: SC.LAYOUT_VERTICAL,  items: ['Top', 'Middle', 'Bottom'],  value: ['Top']  }),  large: SC.SegmentedView.extend({  layout: { width: 120, height: 60, centerX: 70, centerY: 0 },  controlSize: SC.LARGE_CONTROL_SIZE,  itemTitleKey: 'title',  itemValueKey: 'title',  itemActionKey: 'action',  layoutDirection: SC.LAYOUT_VERTICAL,  items: [{  title: 'Up', action: 'goUp'  }, {  title: 'Down', action: 'goDown'  }]  })  })"
+      }),
+      Showcase.ViewsItemContent.create({
         title: 'Disabled',
         example: "SC.View.extend({  childViews: ['regular', 'objects'],  regular: SC.SegmentedView.extend({  isEnabled: false,  layout: { width: 300, height: 24, centerX: 0, centerY: -17 },  items: ['Red', 'White', 'Black'],  value: ['Red']  }),  objects: SC.SegmentedView.extend({  itemIsEnabledKey: 'isEnabled',  itemTitleKey: 'title',  itemValueKey: 'title',  layout: { width: 300, height: 24, centerX: 0, centerY: 17 },  items: [{  title: 'Badger',  isEnabled: true }, {  title: 'Ferret',  isEnabled: false  }, {  title: 'Weasle'  }, {  title: 'Wolverine', isEnabled: false  }]  })  })"
       }),
