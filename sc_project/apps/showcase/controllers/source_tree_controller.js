@@ -19,6 +19,7 @@ Showcase.sources = SC.Object.create(SC.CollectionContent, SC.TreeItemContent, {
       treeItemIsExpanded: true,
       group: true,
       name: "Views & Controls",
+      subpath: 'ui',
       treeItemChildren: [
         SC.Object.create({
           name: "SC.ButtonView",
@@ -168,12 +169,37 @@ Showcase.sources = SC.Object.create(SC.CollectionContent, SC.TreeItemContent, {
 Showcase.sourceTreeController = SC.TreeController.create({
 
   /** Display top level items as groups. */
-  treeItemIsGrouped: NO,
+  treeItemIsGrouped: YES,
 
   /** Don't allow multiple selection. */
   allowsMultipleSelection: NO,
 
   /** Don't allow empty selection. */
-  allowsEmptySelection: YES
+  allowsEmptySelection: YES,
+
+  /** Update the URL to match the selection. */
+  selectionDidChange: function() {
+    var content = this.get('content'),
+      selection = this.get('selection');
+
+    if (selection && selection.firstObject()) {
+      var object = selection.firstObject(),
+        section;
+
+      // Determine which group the selection belongs to.
+      content.get('treeItemChildren').forEach(function(group) {
+        if (group.get('treeItemChildren').indexOf(object)) {
+          section = group;
+        }
+      });
+
+      // Set the location to be a combination of the section and the item.  We
+      // use the name in the URL rather than having to add extra properties to
+      // our source objects.
+      // Use informLocation to avoid triggering a route call, since the
+      // selection change already does what we want.
+      SC.routes.informLocation('location', section.get('subpath') + '/' + object.get('name'));
+    }
+  }.observes('selection')
 
 });

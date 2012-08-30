@@ -150,6 +150,20 @@ Showcase = SC.Application.create(
   purpleTabView: SC.LabelView.extend({  classNames:['purple-tab-view', 'tab-view'],  value: 'Purple View'  }),
   redTabView: SC.LabelView.extend({  classNames:['red-tab-view', 'tab-view'],  value: 'Red View'  }),
 
-  store: SC.Store.create().from(SC.Record.fixtures)
+  store: SC.Store.create().from(SC.Record.fixtures),
+
+  /**
+    Our simple route handler.  This will be called whenever the URL changes
+    directly or on reload.
+   */
+  route: function(route) {
+    var object,
+      section;
+
+    section = Showcase.sources.get('treeItemChildren').findProperty('subpath', route.section);
+    object = section.get('treeItemChildren').findProperty('name', route.key);
+
+    Showcase.sourceTreeController.selectObject(object);
+  }
 
 });

@@ -20,6 +20,8 @@ Showcase.main = function main() {
   Showcase.getPath('mainPage.mainPane').append();
 
   Showcase.sourceTreeController.set('content', Showcase.sources);
+
+  SC.routes.add(':section/:key', Showcase, Showcase.route);
 };
 
 function main() { Showcase.main(); }
