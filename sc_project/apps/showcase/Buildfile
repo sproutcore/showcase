@@ -9,4 +9,3 @@
 
 # It is better to add :required targets here than in the global Buildfile.
 config :showcase, :required => :sproutcore, :favicon => 'favicon.ico'
-
