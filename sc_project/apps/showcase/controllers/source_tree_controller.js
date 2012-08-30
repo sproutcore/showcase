@@ -188,7 +188,7 @@ Showcase.sourceTreeController = SC.TreeController.create({
 
       // Determine which group the selection belongs to.
       content.get('treeItemChildren').forEach(function(group) {
-        if (group.get('treeItemChildren').indexOf(object)) {
+        if (group.get('treeItemChildren').indexOf(object) >= 0) {
           section = group;
         }
       });
@@ -199,6 +199,9 @@ Showcase.sourceTreeController = SC.TreeController.create({
       // Use informLocation to avoid triggering a route call, since the
       // selection change already does what we want.
       SC.routes.informLocation('location', section.get('subpath') + '/' + object.get('name'));
+    } else {
+      // Clear the last location
+      SC.routes.informLocation('location', null);
     }
   }.observes('selection')
 
