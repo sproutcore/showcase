@@ -50,6 +50,10 @@ Showcase.mainPage = SC.Page.design({
           <p>SproutCore is bundled with a wide array of controls for you to use within your own applications.  This allows you to build a fully functioning professional looking application very quickly and to iteratively apply a different theme if necessary.</p> \
           <p>Select the Classes on the left to view examples of each.</p>\
           <footer>Some icons by <a href=\"http://p.yusukekamiyamane.com/\">Yusuke Kamiyamane</a>. All rights reserved.</footer>"
+  }),
+
+  demoView: SC.WebView.design({
+    valueBinding: SC.Binding.oneWay('Showcase.sourceController.appPath')
   })
 
 });

@@ -1,6 +1,7 @@
 // ==========================================================================
 // Project:   Showcase
-// Copyright: @2012 Tyler Keating
+// Copyright: ©2012 7x7 Software, Inc.
+// License:   Licensed under MIT license
 // ==========================================================================
 /*globals Showcase */
 

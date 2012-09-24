@@ -1,6 +1,7 @@
 // ==========================================================================
 // Project:   Showcase
-// Copyright: @2012 Tyler Keating
+// Copyright: ©2012 7x7 Software, Inc.
+// License:   Licensed under MIT license
 // ==========================================================================
 /*globals Showcase */
 
@@ -130,19 +131,21 @@ Showcase.sources = SC.Object.create(SC.CollectionContent, SC.TreeItemContent, {
           view: 'Showcase.viewsPage.workspaceViews'
         })
       ]
-    })
+    }),
 
-    // SC.Object.create({
-    //   treeItemIsExpanded: true,
-    //   group: true,
-    //   name: "Demos",
-    //   treeItemChildren: [
-    //     // SC.Object.create({
-    //     //   name: "SC.Statechart Routing",
-    //     //   view: 'Showcase.demosPage.statechartRouting'
-    //     // })
-    //   ]
-    // }),
+    SC.Object.create(SC.TreeItemContent, {
+      treeItemIsExpanded: true,
+      group: true,
+      name: "Demos",
+      subpath: 'demos',
+      treeItemChildren: [
+        SC.Object.create({
+          appPath: 'demos.sproutcore.com/color_demo',
+          name: "Using SC.Color",
+          view: 'Showcase.mainPage.demoView'
+        })
+      ]
+    }),
 
     // SC.Object.create({
     //   treeItemIsExpanded: true,
