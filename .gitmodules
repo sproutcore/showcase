@@ -1,3 +1,0 @@
-[submodule "sc_project/frameworks/sproutcore"]
-	path = sc_project/frameworks/sproutcore
-	url = git@github.com:sproutcore/sproutcore.git
