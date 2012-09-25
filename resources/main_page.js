@@ -45,11 +45,13 @@ Showcase.mainPage = SC.Page.design({
 
   welcomeView: SC.StaticContentView.design({
     classNames: ['welcome-view'],
-    content: "<h1>SproutCore Showcase</h1>\
-          <h2>Views &amp; Controls</h2>\
-          <p>SproutCore is bundled with a wide array of controls for you to use within your own applications.  This allows you to build a fully functioning professional looking application very quickly and to iteratively apply a different theme if necessary.</p> \
-          <p>Select the Classes on the left to view examples of each.</p>\
-          <footer>Some icons by <a href=\"http://p.yusukekamiyamane.com/\">Yusuke Kamiyamane</a>. All rights reserved.</footer>"
+    content: "<h1>SproutCore Showcase</h1>" +
+          "<h2>Demos</h2>" +
+          "<p>The showcase demos were built to illustrate some of the powerful concepts within SproutCore.  Each demo is a SproutCore app and you can find the source for each demo on <a href=\"https://github.com/sproutcore/demos\" target=\"_blank\" title=\"Demos Source on Github\">Github</a>.</p>" +
+          "<h2>Views &amp; Controls</h2>" +
+          "<p>SproutCore is bundled with a wide array of controls for you to use within your own applications.  This allows you to build a fully functioning professional looking application very quickly and to iteratively apply a unique theme as you go.</p>" +
+          "<p>Select a class name on the left to view examples of each view, including the code used.</p>" +
+          "<footer>Some icons by <a href=\"http://p.yusukekamiyamane.com/\">Yusuke Kamiyamane</a>. All rights reserved.</footer>"
   }),
 
   demoView: SC.WebView.design({
