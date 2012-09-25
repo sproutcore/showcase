@@ -16,6 +16,21 @@ Showcase.sources = SC.Object.create(SC.CollectionContent, SC.TreeItemContent, {
   treeItemIsGrouped: true,
 
   treeItemChildren: [
+
+    SC.Object.create(SC.TreeItemContent, {
+      treeItemIsExpanded: true,
+      group: true,
+      name: "Demos",
+      subpath: 'demos',
+      treeItemChildren: [
+        SC.Object.create({
+          appPath: 'http://demos.sproutcore.com/color_demo',
+          name: "Using SC.Color",
+          view: 'Showcase.mainPage.demoView'
+        })
+      ]
+    }),
+
     SC.Object.create(SC.TreeItemContent, {
       treeItemIsExpanded: true,
       group: true,
@@ -129,20 +144,6 @@ Showcase.sources = SC.Object.create(SC.CollectionContent, SC.TreeItemContent, {
         SC.Object.create({
           name: "SC.WorkspaceView",
           view: 'Showcase.viewsPage.workspaceViews'
-        })
-      ]
-    }),
-
-    SC.Object.create(SC.TreeItemContent, {
-      treeItemIsExpanded: true,
-      group: true,
-      name: "Demos",
-      subpath: 'demos',
-      treeItemChildren: [
-        SC.Object.create({
-          appPath: 'demos.sproutcore.com/color_demo',
-          name: "Using SC.Color",
-          view: 'Showcase.mainPage.demoView'
         })
       ]
     }),
