@@ -1,0 +1,529 @@
+From 4e34da06ba557b96cfeb34b5cd888618a2505935 Mon Sep 17 00:00:00 2001
+From: Public Keating <publickeating@me.com>
+Date: Tue, 2 Oct 2012 22:18:02 -0600
+Subject: [PATCH] Updates copyrights.
+
+---
+ Buildfile                     | 4 ++--
+ core.js                       | 8 +++++---
+ main.js                       | 3 ++-
+ resources/main_page.js        | 3 ++-
+ resources/views_page.js       | 3 ++-
+ system/views_item_content.js  | 3 ++-
+ theme.js                      | 3 ++-
+ views/button_views.js         | 3 ++-
+ views/checkbox_views.js       | 3 ++-
+ views/container_views.js      | 3 ++-
+ views/date_field_views.js     | 3 ++-
+ views/disclosure_views.js     | 3 ++-
+ views/grid_views.js           | 3 ++-
+ views/image_button_views.js   | 3 ++-
+ views/image_views.js          | 3 ++-
+ views/label_views.js          | 3 ++-
+ views/list_views.js           | 3 ++-
+ views/popup_button_views.js   | 3 ++-
+ views/progress_views.js       | 3 ++-
+ views/radio_views.js          | 3 ++-
+ views/scroll_views.js         | 3 ++-
+ views/segmented_views.js      | 3 ++-
+ views/select_views.js         | 3 ++-
+ views/slider_views.js         | 3 ++-
+ views/source_list_views.js    | 3 ++-
+ views/split_views.js          | 3 ++-
+ views/stacked_views.js        | 3 ++-
+ views/static_content_views.js | 3 ++-
+ views/tab_views.js            | 3 ++-
+ views/text_field_views.js     | 3 ++-
+ views/toolbar_views.js        | 3 ++-
+ views/views_item_view.js      | 3 ++-
+ views/views_list_view.js      | 3 ++-
+ views/web_views.js            | 3 ++-
+ views/well_views.js           | 3 ++-
+ views/workspace_views.js      | 3 ++-
+ 36 files changed, 75 insertions(+), 39 deletions(-)
+
+diff --git a/Buildfile b/Buildfile
+index 9dd5352..48282ff 100644
+--- a/Buildfile
++++ b/Buildfile
+@@ -1,8 +1,8 @@
+ # ==========================================================================
+ # Project:   Showcase
+-# Copyright: @2012 My Company, Inc.
++# Copyright: ©2012 7x7 Software, Inc.
++# License:   Licensed under MIT license
+ # ==========================================================================
+-
+ # This is your Buildfile for your app, Showcase. This tells SproutCore
+ # how to build your app. These settings override those in your project
+ # Buildfile, which contains default settings for all apps in your project.
+diff --git a/core.js b/core.js
+index d72b966..294c5fa 100644
+--- a/core.js
++++ b/core.js
+@@ -1,15 +1,17 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 My Company, Inc.
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ 
+ 
+ /** @namespace
+ 
+-  My cool new app.  Describe your application.
++  The Showcase application is used to highlight the many components of
++  SproutCore.  You can visit the live site at http://showcase.sproutcore.com.
+ 
+-  @extends SC.Object
++  @extends SC.Application
+ */
+ Showcase = SC.Application.create(
+   /** @scope Showcase.prototype */ {
+diff --git a/main.js b/main.js
+index 46a8a70..40048be 100644
+--- a/main.js
++++ b/main.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 My Company, Inc.
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ 
+diff --git a/resources/main_page.js b/resources/main_page.js
+index cb33d1a..97751fe 100644
+--- a/resources/main_page.js
++++ b/resources/main_page.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ 
+diff --git a/resources/views_page.js b/resources/views_page.js
+index 3969ead..a8e2dbf 100644
+--- a/resources/views_page.js
++++ b/resources/views_page.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ 
+diff --git a/system/views_item_content.js b/system/views_item_content.js
+index 0daffa4..935fee7 100644
+--- a/system/views_item_content.js
++++ b/system/views_item_content.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ 
+diff --git a/theme.js b/theme.js
+index 1d96831..f508d9c 100644
+--- a/theme.js
++++ b/theme.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 My Company, Inc.
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ 
+diff --git a/views/button_views.js b/views/button_views.js
+index 1330061..9037c2f 100644
+--- a/views/button_views.js
++++ b/views/button_views.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ sc_require('system/views_item_content.js');
+diff --git a/views/checkbox_views.js b/views/checkbox_views.js
+index a7db57f..68360fd 100644
+--- a/views/checkbox_views.js
++++ b/views/checkbox_views.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ sc_require('system/views_item_content.js');
+diff --git a/views/container_views.js b/views/container_views.js
+index f9d1549..55d5e07 100644
+--- a/views/container_views.js
++++ b/views/container_views.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ sc_require('system/views_item_content.js');
+diff --git a/views/date_field_views.js b/views/date_field_views.js
+index aeb08fa..b321241 100644
+--- a/views/date_field_views.js
++++ b/views/date_field_views.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ sc_require('system/views_item_content.js');
+diff --git a/views/disclosure_views.js b/views/disclosure_views.js
+index 87e79f7..f5831f8 100644
+--- a/views/disclosure_views.js
++++ b/views/disclosure_views.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ sc_require('system/views_item_content.js');
+diff --git a/views/grid_views.js b/views/grid_views.js
+index fef9566..c8dfbcc 100644
+--- a/views/grid_views.js
++++ b/views/grid_views.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ sc_require('system/views_item_content.js');
+diff --git a/views/image_button_views.js b/views/image_button_views.js
+index 17de271..39ddd73 100644
+--- a/views/image_button_views.js
++++ b/views/image_button_views.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ sc_require('system/views_item_content.js');
+diff --git a/views/image_views.js b/views/image_views.js
+index bbfc698..804a30b 100644
+--- a/views/image_views.js
++++ b/views/image_views.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ sc_require('system/views_item_content.js');
+diff --git a/views/label_views.js b/views/label_views.js
+index a725e8a..0380302 100644
+--- a/views/label_views.js
++++ b/views/label_views.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ sc_require('system/views_item_content.js');
+diff --git a/views/list_views.js b/views/list_views.js
+index dbf525c..4f1bac9 100644
+--- a/views/list_views.js
++++ b/views/list_views.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ sc_require('system/views_item_content.js');
+diff --git a/views/popup_button_views.js b/views/popup_button_views.js
+index f92e9cf..bb18c3c 100644
+--- a/views/popup_button_views.js
++++ b/views/popup_button_views.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ sc_require('system/views_item_content.js');
+diff --git a/views/progress_views.js b/views/progress_views.js
+index fe81409..89315e1 100644
+--- a/views/progress_views.js
++++ b/views/progress_views.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ sc_require('system/views_item_content.js');
+diff --git a/views/radio_views.js b/views/radio_views.js
+index 880e2be..5d354f0 100644
+--- a/views/radio_views.js
++++ b/views/radio_views.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ sc_require('system/views_item_content.js');
+diff --git a/views/scroll_views.js b/views/scroll_views.js
+index 29c5b0a..3f554fa 100644
+--- a/views/scroll_views.js
++++ b/views/scroll_views.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ sc_require('system/views_item_content.js');
+diff --git a/views/segmented_views.js b/views/segmented_views.js
+index c098a41..c0decf9 100644
+--- a/views/segmented_views.js
++++ b/views/segmented_views.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ sc_require('system/views_item_content.js');
+diff --git a/views/select_views.js b/views/select_views.js
+index b32f81f..15494f9 100644
+--- a/views/select_views.js
++++ b/views/select_views.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ sc_require('system/views_item_content.js');
+diff --git a/views/slider_views.js b/views/slider_views.js
+index 4734d24..313a429 100644
+--- a/views/slider_views.js
++++ b/views/slider_views.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ sc_require('system/views_item_content.js');
+diff --git a/views/source_list_views.js b/views/source_list_views.js
+index e50d916..e15be37 100644
+--- a/views/source_list_views.js
++++ b/views/source_list_views.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ sc_require('system/views_item_content.js');
+diff --git a/views/split_views.js b/views/split_views.js
+index 860c800..185f482 100644
+--- a/views/split_views.js
++++ b/views/split_views.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ sc_require('system/views_item_content.js');
+diff --git a/views/stacked_views.js b/views/stacked_views.js
+index 35267f5..4343ad8 100644
+--- a/views/stacked_views.js
++++ b/views/stacked_views.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ sc_require('system/views_item_content.js');
+diff --git a/views/static_content_views.js b/views/static_content_views.js
+index 17656f0..cbd3f3f 100644
+--- a/views/static_content_views.js
++++ b/views/static_content_views.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ sc_require('system/views_item_content.js');
+diff --git a/views/tab_views.js b/views/tab_views.js
+index f13e747..3e22b2c 100644
+--- a/views/tab_views.js
++++ b/views/tab_views.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ sc_require('system/views_item_content.js');
+diff --git a/views/text_field_views.js b/views/text_field_views.js
+index 5d80eff..14c1691 100644
+--- a/views/text_field_views.js
++++ b/views/text_field_views.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ sc_require('system/views_item_content.js');
+diff --git a/views/toolbar_views.js b/views/toolbar_views.js
+index 469fb11..81ef355 100644
+--- a/views/toolbar_views.js
++++ b/views/toolbar_views.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ sc_require('system/views_item_content.js');
+diff --git a/views/views_item_view.js b/views/views_item_view.js
+index 975af54..c03feed 100644
+--- a/views/views_item_view.js
++++ b/views/views_item_view.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ 
+diff --git a/views/views_list_view.js b/views/views_list_view.js
+index 2d26aa9..64a8c12 100644
+--- a/views/views_list_view.js
++++ b/views/views_list_view.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ sc_require('views/views_item_view.js');
+diff --git a/views/web_views.js b/views/web_views.js
+index 10efae7..8f86150 100644
+--- a/views/web_views.js
++++ b/views/web_views.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ sc_require('system/views_item_content.js');
+diff --git a/views/well_views.js b/views/well_views.js
+index 419b026..29b9de9 100644
+--- a/views/well_views.js
++++ b/views/well_views.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ sc_require('system/views_item_content.js');
+diff --git a/views/workspace_views.js b/views/workspace_views.js
+index 7ec317a..7ee38f7 100644
+--- a/views/workspace_views.js
++++ b/views/workspace_views.js
+@@ -1,6 +1,7 @@
+ // ==========================================================================
+ // Project:   Showcase
+-// Copyright: @2012 Tyler Keating
++// Copyright: ©2012 7x7 Software, Inc.
++// License:   Licensed under MIT license
+ // ==========================================================================
+ /*globals Showcase */
+ sc_require('system/views_item_content.js');
+-- 
+1.7.11.1
+

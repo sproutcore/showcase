@@ -1,15 +1,17 @@
 // ==========================================================================
 // Project:   Showcase
-// Copyright: @2012 My Company, Inc.
+// Copyright: ©2012 7x7 Software, Inc.
+// License:   Licensed under MIT license
 // ==========================================================================
 /*globals Showcase */
 
 
 /** @namespace
 
-  My cool new app.  Describe your application.
+  The Showcase application is used to highlight the many components of
+  SproutCore.  You can visit the live site at http://showcase.sproutcore.com.
 
-  @extends SC.Object
+  @extends SC.Application
 */
 Showcase = SC.Application.create(
   /** @scope Showcase.prototype */ {
