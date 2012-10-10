@@ -16,7 +16,7 @@ Showcase.popupButtonViews = SC.ScrollView.design({
     content: [
       Showcase.ViewsItemContent.create({
         title: 'Regular',
-        example: "SC.PopupButtonView.extend({  layout: { width: 150, height: 24, centerX: 0, centerY: 0 },  menu: SC.MenuPane.extend({  layout: { width: 250 },  items: [  { title: 'Menu Item', keyEquivalent: 'ctrl_shift_n', shortcut: '⌃⇧N' },  { separator: true },  { title: 'Checked Menu Item', checkbox: true, keyEquivalent: 'ctrl_a', shortcut: '⌃A' },  { separator: true },  { title: 'Menu Item with Icon', icon: 'sc-icon-group-16' }  ]  }),  title: 'View Menu'  })"
+        example: "SC.PopupButtonView.extend({  layout: { width: 150, height: 24, centerX: 0, centerY: 0 },  menu: SC.MenuPane.extend({  layout: { width: 250 },  items: [  { title: 'Menu Item', keyEquivalent: 'ctrl_shift_n', shortcut: '⌃⇧N' },  { isSeparator: true },  { title: 'Checked Menu Item', checkbox: true, keyEquivalent: 'ctrl_a', shortcut: '⌃A' },  { isSeparator: true },  { title: 'Menu Item with Icon', icon: 'sc-icon-group-16' }  ]  }),  title: 'View Menu'  })"
       })
     ]
   })
