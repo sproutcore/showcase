@@ -146,7 +146,7 @@ Showcase.sources = SC.Object.create(SC.CollectionContent, SC.TreeItemContent, {
           view: 'Showcase.viewsPage.workspaceViews'
         })
       ]
-    }),
+    })
 
     // SC.Object.create({
     //   treeItemIsExpanded: true,
