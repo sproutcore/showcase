@@ -24,7 +24,7 @@ Showcase.ViewsItemView = SC.View.extend({
     var owner = this.get('owner'),
         exampleHeight = owner.get('exampleHeight');
 
-    return { left: 60, top: 60, right: 60, height: exampleHeight }
+    return { left: 60, top: 70, right: 60, height: exampleHeight }
   }.property().cacheable(),
 
   /** @private */
@@ -38,7 +38,8 @@ Showcase.ViewsItemView = SC.View.extend({
 
   titleLabel: SC.LabelView.design({
     classNames: ['title-label'],
-    layout: { left: 20, top: 15, right: 20, height: 30 },
+    escapeHTML: NO,
+    layout: { left: 20, top: 20, right: 20, height: 50 },
     tagName: 'h2',
     valueBinding: SC.Binding.oneWay('.parentView.content.title')
   }),
@@ -67,7 +68,7 @@ Showcase.ViewsItemView = SC.View.extend({
 
   disclosure: SC.DisclosureView.design({
     layoutBinding: SC.Binding.oneWay('.parentView.exampleLayout').transform(function(layout) {
-      var ourLayout = { left: 10, height: 25, width: 150, top: layout.top + layout.height + 30 };
+      var ourLayout = { left: 10, height: 25, width: 150, top: layout.top + layout.height + 20 };
       return ourLayout;
     }),
 
@@ -84,7 +85,7 @@ Showcase.ViewsItemView = SC.View.extend({
     isTextArea: true,
     isVisibleBinding: SC.Binding.oneWay('.parentView.disclosure.value'),
     layoutBinding: SC.Binding.oneWay('.parentView.exampleLayout').transform(function(layout) {
-      var ourLayout = { left: 15, bottom: 15, right: 15, top: layout.top + layout.height + 60 };
+      var ourLayout = { left: 15, bottom: 15, right: 15, top: layout.top + layout.height + 50 };
       return ourLayout;
     }),
     valueBinding: SC.Binding.oneWay('.parentView.content.exampleString')

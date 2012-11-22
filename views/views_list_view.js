@@ -27,7 +27,7 @@ Showcase.ViewsListView = SC.ListView.extend({
       return customRowHeightIndexes;
     }.property().idempotent(),
 
-    exampleHeight: 110,
+    exampleHeight: 120,
 
     exampleView: Showcase.ViewsItemView,
 
@@ -39,14 +39,14 @@ Showcase.ViewsListView = SC.ListView.extend({
 
     rowSpacing: 2,
 
-    snippetHeight: 170,
+    snippetHeight: 180,
 
     contentIndexesInRect: function(rect) {
       return null; // select all
     },
 
     contentIndexRowHeight: function(view, content, contentIndex) {
-      return this.get('rowHeight') + 170;
+      return this.get('rowHeight') + 180;
     },
 
     createItemView: function(exampleClass, idx, attrs) {

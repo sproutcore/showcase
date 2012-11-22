@@ -26,9 +26,9 @@ $theme.views-item-view {
   }
 
   .example-box {
-    @include border-radius(15px);
-    @include box-shadow(rgba(0,0,0,0.3) 0px 1px 5px inset, rgba(255,255,255,0.8) 0px 1px 7px 1px);
-    background-color: rgba(50,50,50,0.1);
+    @include border-radius(5px);
+    @include box-shadow(rgba(0,0,0,0.3) 0px 1px 5px inset, rgba(255,255,255,0.6) 0px 1px 7px 1px);
+    background-color: rgba(0,0,0,0.1);
   }
 
   .sc-disclosure-view {
@@ -41,6 +41,7 @@ $theme.views-item-view {
 
     .sc-button-label {
       text-decoration: underline;
+      text-shadow: rgba(255,255,255,0.5) 0px 1px 1px;
     }
   }
 
@@ -60,9 +61,13 @@ $theme.views-item-view {
     color: white;
     font-size: 18px;
     font-weight: bold;
-    line-height: 30px;
-    text-align: right;
+    line-height: 20px;
+    text-align: center;
     text-shadow: rgba(0,0,0,0.3) 0px -1px 1px;
+
+    .edge {
+      font-size: 12px;
+    }
   }
 }
 
@@ -304,6 +309,15 @@ $theme.sc-label-view.blue-sample-view {
 
 $theme.sc-label-view.red-sample-view {
   background-color: #ff6d7a;
+  color: white;
+  font-size: 60px;
+  line-height: 260px;
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.4) 0px 1px 2px;
+}
+
+$theme.sc-label-view.yellow-sample-view {
+  background-color: #ffe72b;
   color: white;
   font-size: 60px;
   line-height: 260px;

@@ -16,10 +16,66 @@ Showcase.containerViews = SC.ScrollView.design({
     content: [
       Showcase.ViewsItemContent.create({
         title: 'Regular',
-        example: "SC.ContainerView.extend({  layout: { left: 20, right: 20, top: 20, bottom: 20 },  nowShowing: 'blueSampleView',  blueSampleView: SC.LabelView.extend({  classNames:['blue-sample-view'],  value: 'Blue View'  }),  redSampleView: SC.LabelView.extend({  classNames:['red-sample-view'],  value: 'Red View'  })  });",
+        example: "SC.ContainerView.extend({  layout: { left: 20, right: 20, top: 20, bottom: 20 },  nowShowing: 'blueSampleView',  blueSampleView: SC.LabelView.extend({  classNames:['blue-sample-view'],  value: 'Blue View'  }),  redSampleView: SC.LabelView.extend({  classNames:['red-sample-view'],  value: 'Red View'  }),  yellowSampleView: SC.LabelView.extend({  classNames:['yellow-sample-view'],  value: 'Yellow View'  })  });",
         supportAction: function() {
           var containerView = this.getPath('parentView.exampleBox.contentView');
           if (containerView.get('nowShowing') === 'blueSampleView') containerView.set('nowShowing', 'redSampleView');
+          else if (containerView.get('nowShowing') === 'redSampleView') containerView.set('nowShowing', 'yellowSampleView');
+          else containerView.set('nowShowing', 'blueSampleView');
+        },
+        supportTitle: 'Toggle nowShowing'
+      }),
+      Showcase.ViewsItemContent.create({
+        title: 'DISSOLVE transition<br><span class="edge">Coming in version 1.10!</span>',
+        example: "SC.ContainerView.extend({  layout: { left: 20, right: 20, top: 20, bottom: 20 },  nowShowing: 'blueSampleView',  transition: SC.ContainerView.DISSOLVE,  transitionOptions: { duration: 1.6 },  blueSampleView: SC.LabelView.extend({  classNames:['blue-sample-view'],  value: 'Blue View'  }),  redSampleView: SC.LabelView.extend({  classNames:['red-sample-view'],  value: 'Red View'  }),  yellowSampleView: SC.LabelView.extend({  classNames:['yellow-sample-view'],  value: 'Yellow View'  })  });",
+        supportAction: function() {
+          var containerView = this.getPath('parentView.exampleBox.contentView');
+          if (containerView.get('nowShowing') === 'blueSampleView') containerView.set('nowShowing', 'redSampleView');
+          else if (containerView.get('nowShowing') === 'redSampleView') containerView.set('nowShowing', 'yellowSampleView');
+          else containerView.set('nowShowing', 'blueSampleView');
+        },
+        supportTitle: 'Toggle nowShowing'
+      }),
+      Showcase.ViewsItemContent.create({
+        title: 'FADE_COLOR transition<br><span class="edge">Coming in version 1.10!</span>',
+        example: "SC.ContainerView.extend({  layout: { left: 20, right: 20, top: 20, bottom: 20 },  nowShowing: 'blueSampleView',  transition: SC.ContainerView.FADE_COLOR,  transitionOptions: { duration: 1.6, color: 'white' },  blueSampleView: SC.LabelView.extend({  classNames:['blue-sample-view'],  value: 'Blue View'  }),  redSampleView: SC.LabelView.extend({  classNames:['red-sample-view'],  value: 'Red View'  }),  yellowSampleView: SC.LabelView.extend({  classNames:['yellow-sample-view'],  value: 'Yellow View'  })  });",
+        supportAction: function() {
+          var containerView = this.getPath('parentView.exampleBox.contentView');
+          if (containerView.get('nowShowing') === 'blueSampleView') containerView.set('nowShowing', 'redSampleView');
+          else if (containerView.get('nowShowing') === 'redSampleView') containerView.set('nowShowing', 'yellowSampleView');
+          else containerView.set('nowShowing', 'blueSampleView');
+        },
+        supportTitle: 'Toggle nowShowing'
+      }),
+      Showcase.ViewsItemContent.create({
+        title: 'MOVE_IN transition<br><span class="edge">Coming in version 1.10!</span>',
+        example: "SC.ContainerView.extend({  layout: { left: 20, right: 20, top: 20, bottom: 20 },  nowShowing: 'blueSampleView',  transition: SC.ContainerView.MOVE_IN,  transitionOptions: { duration: 2.6, direction: 'up' },  blueSampleView: SC.LabelView.extend({  classNames:['blue-sample-view'],  value: 'Blue View'  }),  redSampleView: SC.LabelView.extend({  classNames:['red-sample-view'],  value: 'Red View'  }),  yellowSampleView: SC.LabelView.extend({  classNames:['yellow-sample-view'],  value: 'Yellow View'  })  });",
+        supportAction: function() {
+          var containerView = this.getPath('parentView.exampleBox.contentView');
+          if (containerView.get('nowShowing') === 'blueSampleView') containerView.set('nowShowing', 'redSampleView');
+          else if (containerView.get('nowShowing') === 'redSampleView') containerView.set('nowShowing', 'yellowSampleView');
+          else containerView.set('nowShowing', 'blueSampleView');
+        },
+        supportTitle: 'Toggle nowShowing'
+      }),
+      Showcase.ViewsItemContent.create({
+        title: 'PUSH transition<br><span class="edge">Coming in version 1.10!</span>',
+        example: "SC.ContainerView.extend({  layout: { left: 20, right: 20, top: 20, bottom: 20 },  nowShowing: 'blueSampleView',  transition: SC.ContainerView.PUSH,  transitionOptions: { duration: 1.6, direction: 'right' },  blueSampleView: SC.LabelView.extend({  classNames:['blue-sample-view'],  value: 'Blue View'  }),  redSampleView: SC.LabelView.extend({  classNames:['red-sample-view'],  value: 'Red View'  }),  yellowSampleView: SC.LabelView.extend({  classNames:['yellow-sample-view'],  value: 'Yellow View'  })  });",
+        supportAction: function() {
+          var containerView = this.getPath('parentView.exampleBox.contentView');
+          if (containerView.get('nowShowing') === 'blueSampleView') containerView.set('nowShowing', 'redSampleView');
+          else if (containerView.get('nowShowing') === 'redSampleView') containerView.set('nowShowing', 'yellowSampleView');
+          else containerView.set('nowShowing', 'blueSampleView');
+        },
+        supportTitle: 'Toggle nowShowing'
+      }),
+      Showcase.ViewsItemContent.create({
+        title: 'REVEAL transition<br><span class="edge">Coming in version 1.10!</span>',
+        example: "SC.ContainerView.extend({  layout: { left: 20, right: 20, top: 20, bottom: 20 },  nowShowing: 'blueSampleView',  transition: SC.ContainerView.REVEAL,  transitionOptions: { duration: 1.6, direction: 'down' },  blueSampleView: SC.LabelView.extend({  classNames:['blue-sample-view'],  value: 'Blue View'  }),  redSampleView: SC.LabelView.extend({  classNames:['red-sample-view'],  value: 'Red View'  }),  yellowSampleView: SC.LabelView.extend({  classNames:['yellow-sample-view'],  value: 'Yellow View'  })  });",
+        supportAction: function() {
+          var containerView = this.getPath('parentView.exampleBox.contentView');
+          if (containerView.get('nowShowing') === 'blueSampleView') containerView.set('nowShowing', 'redSampleView');
+          else if (containerView.get('nowShowing') === 'redSampleView') containerView.set('nowShowing', 'yellowSampleView');
           else containerView.set('nowShowing', 'blueSampleView');
         },
         supportTitle: 'Toggle nowShowing'
