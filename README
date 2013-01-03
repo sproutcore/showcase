@@ -6,7 +6,7 @@ Copyright: @2012 My Company, Inc.
 To deploy:
 
 • build the app into the working copy of the deployed page repo
-  $ sproutcore build --buildroot=../../path_to_sproutcore-showcase.github.com_repo_working_copy
+  $ sproutcore build showcase --buildroot=../../path_to_sproutcore-showcase.github.com_repo_working_copy
 
 • cd to that directory and move index.html to the top of the directory
   $ cd ../../path_to_sproutcore-showcase.github.com_repo
