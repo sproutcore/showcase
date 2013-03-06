@@ -30,7 +30,7 @@ Showcase.sources = SC.Object.create(SC.CollectionContent, SC.TreeItemContent, {
         }),
         SC.Object.create({
           appPath: 'http://demos.sproutcore.com/color_demo',
-          name: "Using SC.Color",
+          name: "Working with Color",
           view: 'Showcase.mainPage.demoView'
         })
       ]
