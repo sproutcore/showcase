@@ -3,7 +3,7 @@
 // Copyright: ©2012 7x7 Software, Inc.
 // License:   Licensed under MIT license
 // ==========================================================================
-/*globals Showcase */
+/*global Showcase */
 
 
 /**
@@ -24,7 +24,7 @@ Showcase.sources = SC.Object.create(SC.CollectionContent, SC.TreeItemContent, {
       subpath: 'demos',
       treeItemChildren: [
         SC.Object.create({
-          appPath: 'http://demos.sproutcore.com/big_data',
+          appPath: 'http://demos.sproutcore.com/big_data_demo',
           name: "Big Data",
           view: 'Showcase.mainPage.demoView'
         }),
