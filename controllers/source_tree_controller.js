@@ -24,6 +24,11 @@ Showcase.sources = SC.Object.create(SC.CollectionContent, SC.TreeItemContent, {
       subpath: 'demos',
       treeItemChildren: [
         SC.Object.create({
+          appPath: 'http://demos.sproutcore.com/big_data',
+          name: "Big Data",
+          view: 'Showcase.mainPage.demoView'
+        }),
+        SC.Object.create({
           appPath: 'http://demos.sproutcore.com/color_demo',
           name: "Using SC.Color",
           view: 'Showcase.mainPage.demoView'

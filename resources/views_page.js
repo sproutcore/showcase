@@ -8,6 +8,8 @@
 
 Showcase.viewsPage = SC.Page.create({
 
+  // This is dumb.  Don't do it this way, because the "class"es of each aren't replaced by SC.Page as they would be if they were set directly on the property.
+  // TODO: fix these.
   buttonViews: Showcase.buttonViews,
 
   checkboxViews: Showcase.checkboxViews,
