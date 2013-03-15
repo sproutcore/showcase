@@ -31,7 +31,7 @@ $theme.views-item-view {
     background-color: rgba(0,0,0,0.1);
   }
 
-  .sc-disclosure-view {
+  .sc-button-view.sc-disclosure-view {
     line-height: 30px;
 
     .disclosure {
@@ -146,22 +146,18 @@ $theme.sc-image-view.my-image-view {
 $theme.sc-label-view.my-label-view {
   text-align: center;
 
-  &.icon img {
+  .icon {
     margin-right: 3px;
   }
 
   &.sc-tiny-size {
     line-height: 11px;
-
-    &.icon img {
-      top: -2px;
-    }
   }
 
   &.sc-small-size {
     line-height: 15px;
 
-    &.icon img {
+    .icon {
       top: -2px;
     }
   }
@@ -169,7 +165,7 @@ $theme.sc-label-view.my-label-view {
   &.sc-regular-size {
     line-height: 16px;
 
-    &.icon img {
+    .icon {
       top: -1px;
     }
   }
@@ -177,7 +173,7 @@ $theme.sc-label-view.my-label-view {
   &.sc-large-size {
     line-height: 24px;
 
-    &.icon img {
+    .icon {
       margin-right: 4px;
       top: -4px;
     }
@@ -186,11 +182,11 @@ $theme.sc-label-view.my-label-view {
 
 
 $theme.sc-list-view.my-list-view {
-  .sc-list-item-view img.icon {
+  .sc-list-item-view .icon {
     margin-top: -12px;
   }
 
-  .sc-list-item-view.has-checkbox img.icon {
+  .sc-list-item-view.has-checkbox .icon {
     left: 29px;
   }
 
