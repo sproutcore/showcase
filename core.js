@@ -6,7 +6,7 @@
 /*globals Showcase */
 
 
-/** @namespace
+/**
 
   The Showcase application is used to highlight the many components of
   SproutCore.  You can visit the live site at http://showcase.sproutcore.com.
