@@ -28,10 +28,17 @@ Showcase.ViewsItemView = SC.View.extend({
   }.property().cacheable(),
 
   /** @private */
-  render: function(context, firstTime) {
+  render: function (context, firstTime) {
     var isLastItem = this.get('isLastItem');
 
     if (isLastItem) { context.addClass('last-item'); }
+  },
+
+  /** @private */
+  update: function (jQuery) {
+    var isLastItem = this.get('isLastItem');
+
+    jQuery.toggleClass('last-item', isLastItem);
   },
 
   childViews: ['titleLabel', 'exampleBox', 'supportButton', 'disclosure', 'snippetField'],
@@ -47,13 +54,7 @@ Showcase.ViewsItemView = SC.View.extend({
   exampleBox: SC.ContainerView.design({
     classNames: ['example-box'],
     layoutBinding: SC.Binding.oneWay('.parentView.exampleLayout'),
-    nowShowingBinding: SC.Binding.oneWay('.parentView.content.exampleView'),
-    replaceContent: function(newContent) {
-      // SC.ContainerView needs its awake function to be called to be correctly initialized.
-      newContent.awake();
-
-      sc_super();
-    },
+    nowShowingBinding: SC.Binding.oneWay('.parentView.content.exampleView')
   }),
 
   supportButton: SC.ButtonView.design({
