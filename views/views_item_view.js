@@ -54,7 +54,13 @@ Showcase.ViewsItemView = SC.View.extend({
   exampleBox: SC.ContainerView.design({
     classNames: ['example-box'],
     layoutBinding: SC.Binding.oneWay('.parentView.exampleLayout'),
-    nowShowingBinding: SC.Binding.oneWay('.parentView.content.exampleView')
+    nowShowingBinding: SC.Binding.oneWay('.parentView.content.exampleView'),
+    replaceContent: function(newContent) {
+      // SC.ContainerView needs its awake function to be called to be correctly initialized.
+      newContent.awake();
+
+      sc_super();
+    },
   }),
 
   supportButton: SC.ButtonView.design({
