@@ -157,9 +157,56 @@ Showcase.viewsPage = SC.Page.create({
     })
   }),
 
-  imageButtonViews: Showcase.imageButtonViews,
+  imageButtonViews: SC.ScrollView.design({
+    contentView: Showcase.ViewsListView.design({
+      content: [
+        Showcase.ViewsItemContent.create({
+          title: 'Regular',
+          example: "SC.ImageButtonView.extend({  classNames: ['my-image-button'],  layout: { width: 48, height: 48, centerX: 0, centerY: 0 },  image: 'sc-icon-alert-48'  });"
+        })
+      ]
+    })
+  }),
 
-  imageViews: Showcase.imageViews,
+  imageViews: SC.ScrollView.design({
+    contentView: Showcase.ViewsListView.design({
+      content: [
+        Showcase.ViewsItemContent.create({
+          title: 'Default (<code>scale: SC.FILL</code>)',
+          example: "SC.View.extend({  childViews: ['smallerImage', 'largerImage'],  smallerImage: SC.ImageView.extend({  classNames: ['my-image-view'],  layout: { width: 280, height: 220, centerX: -160, centerY: 0 },  value: sc_static('sproutcore-128.png')  }),  largerImage: SC.ImageView.extend({  classNames: ['my-image-view'],  layout: { width: 280, height: 220, centerX: 160, centerY: 0 },  value: sc_static('sproutcore-512.png')  })  })"
+        }),
+        Showcase.ViewsItemContent.create({
+          title: 'No Scaling (<code>scale: SC.SCALE_NONE</code>)',
+          example: "SC.View.extend({  childViews: ['smallerImage', 'largerImage'],  smallerImage: SC.ImageView.extend({  classNames: ['my-image-view'],  layout: { width: 280, height: 220, centerX: -160, centerY: 0 },  scale: SC.SCALE_NONE,  value: sc_static('sproutcore-128.png')  }),  largerImage: SC.ImageView.extend({  classNames: ['my-image-view'],  layout: { width: 280, height: 220, centerX: 160, centerY: 0 },  scale: SC.SCALE_NONE,  value: sc_static('sproutcore-512.png')  })  })"
+        }),
+        Showcase.ViewsItemContent.create({
+          title: 'Best Fit Scaling (<code>scale: SC.BEST_FIT</code>)',
+          example: "SC.View.extend({  childViews: ['smallerImage', 'largerImage'],  smallerImage: SC.ImageView.extend({  classNames: ['my-image-view'],  layout: { width: 280, height: 220, centerX: -160, centerY: 0 },  scale: SC.BEST_FIT,  value: sc_static('sproutcore-128.png')  }),  largerImage: SC.ImageView.extend({  classNames: ['my-image-view'],  layout: { width: 280, height: 220, centerX: 160, centerY: 0 },  scale: SC.BEST_FIT,  value: sc_static('sproutcore-512.png')  })  })"
+        }),
+        Showcase.ViewsItemContent.create({
+          title: 'Best Fit Scaling Down Only (<code>scale: SC.BEST_FIT_DOWN_ONLY</code>)',
+          example: "SC.View.extend({  childViews: ['smallerImage', 'largerImage'],  smallerImage: SC.ImageView.extend({  classNames: ['my-image-view'],  layout: { width: 280, height: 220, centerX: -160, centerY: 0 },  scale: SC.BEST_FIT_DOWN_ONLY,  value: sc_static('sproutcore-128.png')  }),  largerImage: SC.ImageView.extend({  classNames: ['my-image-view'],  layout: { width: 280, height: 220, centerX: 160, centerY: 0 },  scale: SC.BEST_FIT_DOWN_ONLY,  value: sc_static('sproutcore-512.png')  })  })"
+        }),
+        Showcase.ViewsItemContent.create({
+          title: 'Fill Proportionally (<code>scale: SC.BEST_FILL</code>)',
+          example: "SC.View.extend({  childViews: ['smallerImage', 'largerImage'],  smallerImage: SC.ImageView.extend({  classNames: ['my-image-view'],  layout: { width: 280, height: 220, centerX: -160, centerY: 0 },  scale: SC.BEST_FILL,  value: sc_static('sproutcore-128.png')  }),  largerImage: SC.ImageView.extend({  classNames: ['my-image-view'],  layout: { width: 280, height: 220, centerX: 160, centerY: 0 },  scale: SC.BEST_FILL,  value: sc_static('sproutcore-512.png')  })  })"
+        }),
+        Showcase.ViewsItemContent.create({
+          title: 'Top Alignments',
+          example: "SC.View.extend({  childViews: ['left', 'middle', 'right'],  left: SC.ImageView.extend({  classNames: ['my-image-view'],  layout: { width: 220, height: 220, centerX: -230, centerY: 0 },  align: SC.ALIGN_TOP_LEFT,  scale: SC.SCALE_NONE,  value: sc_static('sproutcore-128.png')  }),  middle: SC.ImageView.extend({  classNames: ['my-image-view'],  layout: { width: 220, height: 220, centerX: 0, centerY: 0 },  align: SC.ALIGN_TOP,  scale: SC.SCALE_NONE,  value: sc_static('sproutcore-128.png')  }),  right: SC.ImageView.extend({  classNames: ['my-image-view'],  layout: { width: 220, height: 220, centerX: 230, centerY: 0 },  align: SC.ALIGN_TOP_RIGHT,  scale: SC.SCALE_NONE,  value: sc_static('sproutcore-128.png')  })  })"
+        }),
+        Showcase.ViewsItemContent.create({
+          title: 'Middle Alignments',
+          example: "SC.View.extend({  childViews: ['left', 'middle', 'right'],  left: SC.ImageView.extend({  classNames: ['my-image-view'],  layout: { width: 220, height: 220, centerX: -230, centerY: 0 },  align: SC.ALIGN_LEFT,  scale: SC.SCALE_NONE,  value: sc_static('sproutcore-128.png')  }),  middle: SC.ImageView.extend({  classNames: ['my-image-view'],  layout: { width: 220, height: 220, centerX: 0, centerY: 0 },  scale: SC.SCALE_NONE,  value: sc_static('sproutcore-128.png')  }),  right: SC.ImageView.extend({  classNames: ['my-image-view'],  layout: { width: 220, height: 220, centerX: 230, centerY: 0 },  align: SC.ALIGN_RIGHT,  scale: SC.SCALE_NONE,  value: sc_static('sproutcore-128.png')  })  })"
+        }),
+        Showcase.ViewsItemContent.create({
+          title: 'Bottom Alignments',
+          example: "SC.View.extend({  childViews: ['left', 'middle', 'right'],  left: SC.ImageView.extend({  classNames: ['my-image-view'],  layout: { width: 220, height: 220, centerX: -230, centerY: 0 },  align: SC.ALIGN_BOTTOM_LEFT,  scale: SC.SCALE_NONE,  value: sc_static('sproutcore-128.png')  }),  middle: SC.ImageView.extend({  classNames: ['my-image-view'],  layout: { width: 220, height: 220, centerX: 0, centerY: 0 },  align: SC.ALIGN_BOTTOM,  scale: SC.SCALE_NONE,  value: sc_static('sproutcore-128.png')  }),  right: SC.ImageView.extend({  classNames: ['my-image-view'],  layout: { width: 220, height: 220, centerX: 230, centerY: 0 },  align: SC.ALIGN_BOTTOM_RIGHT,  scale: SC.SCALE_NONE,  value: sc_static('sproutcore-128.png')  })  })"
+        })
+      ],
+      exampleHeight: 270
+    })
+  }),
 
   labelViews: Showcase.labelViews,
 
