@@ -24,18 +24,23 @@ Showcase.sources = SC.Object.create(SC.CollectionContent, SC.TreeItemContent, {
       subpath: 'demos',
       treeItemChildren: [
         SC.Object.create({
-          appPath: 'http://demos.sproutcore.com/big_data_demo',
-          name: "Big Data",
+          appPath: 'http://demos.sproutcore.com/images_demo',
+          name: "Automatic Image Scaling",
           view: 'Showcase.mainPage.demoView'
         }),
         SC.Object.create({
-          appPath: 'http://demos.sproutcore.com/images_demo',
-          name: "Image Scaling",
+          appPath: 'http://demos.sproutcore.com/child_view_layout_demo',
+          name: "Child View Layouts",
+          view: 'Showcase.mainPage.demoView'
+        }),
+        SC.Object.create({
+          appPath: 'http://demos.sproutcore.com/big_data_demo',
+          name: "Displaying Big Data",
           view: 'Showcase.mainPage.demoView'
         }),
         SC.Object.create({
           appPath: 'http://demos.sproutcore.com/lively_view_demo',
-          name: "Creating Playful Interfaces",
+          name: "Transition Plugins",
           view: 'Showcase.mainPage.demoView'
         }),
         SC.Object.create({
