@@ -70,67 +70,67 @@ Showcase.viewsPage = SC.Page.create({
             else containerView.set('nowShowing', 'blueSampleView');
           },
           supportTitle: 'Toggle nowShowing'
+        }),
+        Showcase.ViewsItemContent.create({
+          title: 'DISSOLVE transition',
+          example: "SC.ContainerView.extend({  layout: { left: 20, right: 20, top: 20, bottom: 20 },  nowShowing: 'blueSampleView',  transitionSwap: SC.ContainerView.DISSOLVE,  transitionSwapOptions: { duration: 1.2 },  blueSampleView: SC.LabelView.extend({  classNames:['blue-sample-view'],  value: 'Blue View'  }),  redSampleView: SC.LabelView.extend({  classNames:['red-sample-view'],  value: 'Red View'  }),  yellowSampleView: SC.LabelView.extend({  classNames:['yellow-sample-view'],  value: 'Yellow View'  }),  greenSampleView: SC.LabelView.extend({  classNames:['dark-green-sample-view'],  value: 'Green View'  })  });",
+          supportAction: function () {
+            var containerView = this.getPath('parentView.exampleBox.contentView');
+            if (containerView.get('nowShowing') === 'blueSampleView') containerView.set('nowShowing', 'redSampleView');
+            else if (containerView.get('nowShowing') === 'redSampleView') containerView.set('nowShowing', 'yellowSampleView');
+            else if (containerView.get('nowShowing') === 'yellowSampleView') containerView.set('nowShowing', 'greenSampleView');
+            else containerView.set('nowShowing', 'blueSampleView');
+          },
+          supportTitle: 'Toggle nowShowing'
+        }),
+        Showcase.ViewsItemContent.create({
+          title: 'FADE_COLOR transition',
+          example: "SC.ContainerView.extend({  layout: { left: 20, right: 20, top: 20, bottom: 20 },  nowShowing: 'blueSampleView',  transitionSwap: SC.ContainerView.FADE_COLOR,  transitionSwapOptions: { duration: 1.2, color: 'white' },  blueSampleView: SC.LabelView.extend({  classNames:['blue-sample-view'],  value: 'Blue View'  }),  redSampleView: SC.LabelView.extend({  classNames:['red-sample-view'],  value: 'Red View'  }),  yellowSampleView: SC.LabelView.extend({  classNames:['yellow-sample-view'],  value: 'Yellow View'  }),  greenSampleView: SC.LabelView.extend({  classNames:['dark-green-sample-view'],  value: 'Green View'  })  });",
+          supportAction: function () {
+            var containerView = this.getPath('parentView.exampleBox.contentView');
+            if (containerView.get('nowShowing') === 'blueSampleView') containerView.set('nowShowing', 'redSampleView');
+            else if (containerView.get('nowShowing') === 'redSampleView') containerView.set('nowShowing', 'yellowSampleView');
+            else if (containerView.get('nowShowing') === 'yellowSampleView') containerView.set('nowShowing', 'greenSampleView');
+            else containerView.set('nowShowing', 'blueSampleView');
+          },
+          supportTitle: 'Toggle nowShowing'
+        }),
+        Showcase.ViewsItemContent.create({
+          title: 'MOVE_IN transition',
+          example: "SC.ContainerView.extend({  layout: { left: 20, right: 20, top: 20, bottom: 20 },  nowShowing: 'blueSampleView',  transitionSwap: SC.ContainerView.MOVE_IN,  transitionSwapOptions: { duration: 1.2, direction: 'up' },  blueSampleView: SC.LabelView.extend({  classNames:['blue-sample-view'],  value: 'Blue View',  wantsAcceleratedLayer: YES  }),  redSampleView: SC.LabelView.extend({  classNames:['red-sample-view'],  value: 'Red View',  wantsAcceleratedLayer: YES  }),  yellowSampleView: SC.LabelView.extend({  classNames:['yellow-sample-view'],  value: 'Yellow View',  wantsAcceleratedLayer: YES  }),  greenSampleView: SC.LabelView.extend({  classNames:['dark-green-sample-view'],  value: 'Green View',  wantsAcceleratedLayer: YES  })  });",
+          supportAction: function () {
+            var containerView = this.getPath('parentView.exampleBox.contentView');
+            if (containerView.get('nowShowing') === 'blueSampleView') containerView.set('nowShowing', 'redSampleView');
+            else if (containerView.get('nowShowing') === 'redSampleView') containerView.set('nowShowing', 'yellowSampleView');
+            else if (containerView.get('nowShowing') === 'yellowSampleView') containerView.set('nowShowing', 'greenSampleView');
+            else containerView.set('nowShowing', 'blueSampleView');
+          },
+          supportTitle: 'Toggle nowShowing'
+        }),
+        Showcase.ViewsItemContent.create({
+          title: 'PUSH transition',
+          example: "SC.ContainerView.extend({  layout: { left: 20, right: 20, top: 20, bottom: 20 },  nowShowing: 'blueSampleView',  transitionSwap: SC.ContainerView.PUSH,  transitionSwapOptions: { duration: 1.2, direction: 'right' },  blueSampleView: SC.LabelView.extend({  classNames:['blue-sample-view'],  value: 'Blue View',  wantsAcceleratedLayer: YES  }),  redSampleView: SC.LabelView.extend({  classNames:['red-sample-view'],  value: 'Red View',  wantsAcceleratedLayer: YES  }),  yellowSampleView: SC.LabelView.extend({  classNames:['yellow-sample-view'],  value: 'Yellow View',  wantsAcceleratedLayer: YES  }),  greenSampleView: SC.LabelView.extend({  classNames:['dark-green-sample-view'],  value: 'Green View',  wantsAcceleratedLayer: YES  })  });",
+          supportAction: function () {
+            var containerView = this.getPath('parentView.exampleBox.contentView');
+            if (containerView.get('nowShowing') === 'blueSampleView') containerView.set('nowShowing', 'redSampleView');
+            else if (containerView.get('nowShowing') === 'redSampleView') containerView.set('nowShowing', 'yellowSampleView');
+            else if (containerView.get('nowShowing') === 'yellowSampleView') containerView.set('nowShowing', 'greenSampleView');
+            else containerView.set('nowShowing', 'blueSampleView');
+          },
+          supportTitle: 'Toggle nowShowing'
+        }),
+        Showcase.ViewsItemContent.create({
+          title: 'REVEAL transition',
+          example: "SC.ContainerView.extend({  layout: { left: 20, right: 20, top: 20, bottom: 20 },  nowShowing: 'blueSampleView',  transitionSwap: SC.ContainerView.REVEAL,  transitionSwapOptions: { duration: 1.2, direction: 'down' },  blueSampleView: SC.LabelView.extend({  classNames:['blue-sample-view'],  value: 'Blue View',  wantsAcceleratedLayer: YES  }),  redSampleView: SC.LabelView.extend({  classNames:['red-sample-view'],  value: 'Red View',  wantsAcceleratedLayer: YES  }),  yellowSampleView: SC.LabelView.extend({  classNames:['yellow-sample-view'],  value: 'Yellow View',  wantsAcceleratedLayer: YES  }),  greenSampleView: SC.LabelView.extend({  classNames:['dark-green-sample-view'],  value: 'Green View',  wantsAcceleratedLayer: YES  })  });",
+          supportAction: function () {
+            var containerView = this.getPath('parentView.exampleBox.contentView');
+            if (containerView.get('nowShowing') === 'blueSampleView') containerView.set('nowShowing', 'redSampleView');
+            else if (containerView.get('nowShowing') === 'redSampleView') containerView.set('nowShowing', 'yellowSampleView');
+            else if (containerView.get('nowShowing') === 'yellowSampleView') containerView.set('nowShowing', 'greenSampleView');
+            else containerView.set('nowShowing', 'blueSampleView');
+          },
+          supportTitle: 'Toggle nowShowing'
         })
-        // Showcase.ViewsItemContent.create({
-        //   title: 'DISSOLVE transition<br><span class="edge">Coming in SproutCore 1.10!</span>',
-        //   example: "SC.ContainerView.extend({  layout: { left: 20, right: 20, top: 20, bottom: 20 },  nowShowing: 'blueSampleView',  transition: SC.ContainerView.DISSOLVE,  transitionOptions: { duration: 1.2 },  blueSampleView: SC.LabelView.extend({  classNames:['blue-sample-view'],  value: 'Blue View'  }),  redSampleView: SC.LabelView.extend({  classNames:['red-sample-view'],  value: 'Red View'  }),  yellowSampleView: SC.LabelView.extend({  classNames:['yellow-sample-view'],  value: 'Yellow View'  }),  greenSampleView: SC.LabelView.extend({  classNames:['dark-green-sample-view'],  value: 'Green View'  })  });",
-        //   supportAction: function () {
-        //     var containerView = this.getPath('parentView.exampleBox.contentView');
-        //     if (containerView.get('nowShowing') === 'blueSampleView') containerView.set('nowShowing', 'redSampleView');
-        //     else if (containerView.get('nowShowing') === 'redSampleView') containerView.set('nowShowing', 'yellowSampleView');
-        //     else if (containerView.get('nowShowing') === 'yellowSampleView') containerView.set('nowShowing', 'greenSampleView');
-        //     else containerView.set('nowShowing', 'blueSampleView');
-        //   },
-        //   supportTitle: 'Toggle nowShowing'
-        // }),
-        // Showcase.ViewsItemContent.create({
-        //   title: 'FADE_COLOR transition<br><span class="edge">Coming in SproutCore 1.10!</span>',
-        //   example: "SC.ContainerView.extend({  layout: { left: 20, right: 20, top: 20, bottom: 20 },  nowShowing: 'blueSampleView',  transition: SC.ContainerView.FADE_COLOR,  transitionOptions: { duration: 1.2, color: 'white' },  blueSampleView: SC.LabelView.extend({  classNames:['blue-sample-view'],  value: 'Blue View'  }),  redSampleView: SC.LabelView.extend({  classNames:['red-sample-view'],  value: 'Red View'  }),  yellowSampleView: SC.LabelView.extend({  classNames:['yellow-sample-view'],  value: 'Yellow View'  }),  greenSampleView: SC.LabelView.extend({  classNames:['dark-green-sample-view'],  value: 'Green View'  })  });",
-        //   supportAction: function () {
-        //     var containerView = this.getPath('parentView.exampleBox.contentView');
-        //     if (containerView.get('nowShowing') === 'blueSampleView') containerView.set('nowShowing', 'redSampleView');
-        //     else if (containerView.get('nowShowing') === 'redSampleView') containerView.set('nowShowing', 'yellowSampleView');
-        //     else if (containerView.get('nowShowing') === 'yellowSampleView') containerView.set('nowShowing', 'greenSampleView');
-        //     else containerView.set('nowShowing', 'blueSampleView');
-        //   },
-        //   supportTitle: 'Toggle nowShowing'
-        // }),
-        // Showcase.ViewsItemContent.create({
-        //   title: 'MOVE_IN transition<br><span class="edge">Coming in SproutCore 1.10!</span>',
-        //   example: "SC.ContainerView.extend({  layout: { left: 20, right: 20, top: 20, bottom: 20 },  nowShowing: 'blueSampleView',  transition: SC.ContainerView.MOVE_IN,  transitionOptions: { duration: 1.2, direction: 'up' },  blueSampleView: SC.LabelView.extend({  classNames:['blue-sample-view'],  value: 'Blue View',  wantsAcceleratedLayer: YES  }),  redSampleView: SC.LabelView.extend({  classNames:['red-sample-view'],  value: 'Red View',  wantsAcceleratedLayer: YES  }),  yellowSampleView: SC.LabelView.extend({  classNames:['yellow-sample-view'],  value: 'Yellow View',  wantsAcceleratedLayer: YES  }),  greenSampleView: SC.LabelView.extend({  classNames:['dark-green-sample-view'],  value: 'Green View',  wantsAcceleratedLayer: YES  })  });",
-        //   supportAction: function () {
-        //     var containerView = this.getPath('parentView.exampleBox.contentView');
-        //     if (containerView.get('nowShowing') === 'blueSampleView') containerView.set('nowShowing', 'redSampleView');
-        //     else if (containerView.get('nowShowing') === 'redSampleView') containerView.set('nowShowing', 'yellowSampleView');
-        //     else if (containerView.get('nowShowing') === 'yellowSampleView') containerView.set('nowShowing', 'greenSampleView');
-        //     else containerView.set('nowShowing', 'blueSampleView');
-        //   },
-        //   supportTitle: 'Toggle nowShowing'
-        // }),
-        // Showcase.ViewsItemContent.create({
-        //   title: 'PUSH transition<br><span class="edge">Coming in SproutCore 1.10!</span>',
-        //   example: "SC.ContainerView.extend({  layout: { left: 20, right: 20, top: 20, bottom: 20 },  nowShowing: 'blueSampleView',  transition: SC.ContainerView.PUSH,  transitionOptions: { duration: 1.2, direction: 'right' },  blueSampleView: SC.LabelView.extend({  classNames:['blue-sample-view'],  value: 'Blue View',  wantsAcceleratedLayer: YES  }),  redSampleView: SC.LabelView.extend({  classNames:['red-sample-view'],  value: 'Red View',  wantsAcceleratedLayer: YES  }),  yellowSampleView: SC.LabelView.extend({  classNames:['yellow-sample-view'],  value: 'Yellow View',  wantsAcceleratedLayer: YES  }),  greenSampleView: SC.LabelView.extend({  classNames:['dark-green-sample-view'],  value: 'Green View',  wantsAcceleratedLayer: YES  })  });",
-        //   supportAction: function () {
-        //     var containerView = this.getPath('parentView.exampleBox.contentView');
-        //     if (containerView.get('nowShowing') === 'blueSampleView') containerView.set('nowShowing', 'redSampleView');
-        //     else if (containerView.get('nowShowing') === 'redSampleView') containerView.set('nowShowing', 'yellowSampleView');
-        //     else if (containerView.get('nowShowing') === 'yellowSampleView') containerView.set('nowShowing', 'greenSampleView');
-        //     else containerView.set('nowShowing', 'blueSampleView');
-        //   },
-        //   supportTitle: 'Toggle nowShowing'
-        // }),
-        // Showcase.ViewsItemContent.create({
-        //   title: 'REVEAL transition<br><span class="edge">Coming in SproutCore 1.10!</span>',
-        //   example: "SC.ContainerView.extend({  layout: { left: 20, right: 20, top: 20, bottom: 20 },  nowShowing: 'blueSampleView',  transition: SC.ContainerView.REVEAL,  transitionOptions: { duration: 1.2, direction: 'down' },  blueSampleView: SC.LabelView.extend({  classNames:['blue-sample-view'],  value: 'Blue View',  wantsAcceleratedLayer: YES  }),  redSampleView: SC.LabelView.extend({  classNames:['red-sample-view'],  value: 'Red View',  wantsAcceleratedLayer: YES  }),  yellowSampleView: SC.LabelView.extend({  classNames:['yellow-sample-view'],  value: 'Yellow View',  wantsAcceleratedLayer: YES  }),  greenSampleView: SC.LabelView.extend({  classNames:['dark-green-sample-view'],  value: 'Green View',  wantsAcceleratedLayer: YES  })  });",
-        //   supportAction: function () {
-        //     var containerView = this.getPath('parentView.exampleBox.contentView');
-        //     if (containerView.get('nowShowing') === 'blueSampleView') containerView.set('nowShowing', 'redSampleView');
-        //     else if (containerView.get('nowShowing') === 'redSampleView') containerView.set('nowShowing', 'yellowSampleView');
-        //     else if (containerView.get('nowShowing') === 'yellowSampleView') containerView.set('nowShowing', 'greenSampleView');
-        //     else containerView.set('nowShowing', 'blueSampleView');
-        //   },
-        //   supportTitle: 'Toggle nowShowing'
-        // })
       ],
       exampleHeight: 300
     })
