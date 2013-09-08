@@ -60,7 +60,7 @@ Showcase.ViewsItemView = SC.View.extend({
       newContent.awake();
 
       sc_super();
-    },
+    }
   }),
 
   supportButton: SC.ButtonView.design({
