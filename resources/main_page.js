@@ -33,6 +33,9 @@ Showcase.mainPage = SC.Page.design({
           classNames: ['main-source-list'],
           contentBinding: SC.Binding.oneWay('Showcase.sourceTreeController.arrangedObjects'),
           contentValueKey: 'name',
+
+          // Show all the items for best performance since the list is short.
+          contentIndexesInRect: function () { return null; }.property().cacheable(),
           selectionBinding: SC.Binding.from('Showcase.sourceTreeController.selection')
         })
       }),
