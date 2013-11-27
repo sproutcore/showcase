@@ -39,6 +39,11 @@ Showcase.sources = SC.Object.create(SC.CollectionContent, SC.TreeItemContent, {
           view: 'Showcase.mainPage.demoView'
         }),
         SC.Object.create({
+          appPath: 'http://demos.sproutcore.com/flot_demo',
+          name: "Flot (or other) Integration",
+          view: 'Showcase.mainPage.demoView'
+        }),
+        SC.Object.create({
           appPath: 'http://demos.sproutcore.com/lively_view_demo',
           name: "Transition Plugins",
           view: 'Showcase.mainPage.demoView'
