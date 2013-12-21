@@ -23,7 +23,7 @@ Showcase.ViewsItemContent = SC.Object.extend({
 
     parts = example.split('  ');
     parts.forEach(function(part, index) {
-      if (part.indexOf('.extend(') >= 0 || part.indexOf('function(') >= 0 || part.indexOf('({') >= 0) {
+      if (part.indexOf('.extend(') >= 0 || part.indexOf('.design(') >= 0 || part.indexOf('function(') >= 0 || part.indexOf('({') >= 0) {
         parts[index] = padding + part;
         padding += '  ';
       } else if (part.indexOf('}.property') >= 0 || part.indexOf('})') >= 0) {
