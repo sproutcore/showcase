@@ -26,6 +26,10 @@ Showcase.splitViews = SC.ScrollView.design({
       Showcase.ViewsItemContent.create({
         title: 'Custom Initial Size',
         example: "SC.SplitView.extend({  layout: { top: 20, bottom: 20, left: 20, right: 20 },  childViews: ['leftView', 'rightView'],  leftView: SC.LabelView.design(SC.SplitChild, {  classNames: ['demo-split-view-label'],  size: 120,  value: 'Left View',  minimumSize: 80  }),  rightView: SC.LabelView.design(SC.SplitChild, {  classNames: ['demo-split-view-label'],  value: 'Right View',  minimumSize: 80  })  })"
+      }),
+      Showcase.ViewsItemContent.create({
+        title: 'Three Children',
+        example: "SC.SplitView.extend({  layout: { top: 20, bottom: 20, left: 20, right: 20 },  childViews: ['leftView', 'middleView', 'rightView'],  leftView: SC.LabelView.design(SC.SplitChild, {  classNames: ['demo-split-view-label'],  value: 'Left View',  minimumSize: 80  }),  middleView: SC.LabelView.design(SC.SplitChild, {  classNames: ['demo-split-view-label'],  value: 'Middle View',  minimumSize: 80  }),  rightView: SC.LabelView.design(SC.SplitChild, {  classNames: ['demo-split-view-label'],  value: 'Right View',  minimumSize: 80  })  })"
       })
     ]
   })
