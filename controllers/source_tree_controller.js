@@ -134,10 +134,10 @@ Showcase.sources = SC.Object.create(SC.CollectionContent, SC.TreeItemContent, {
           name: "SC.SourceListView",
           view: 'Showcase.viewsPage.sourceListViews'
         }),
-        // SC.Object.create({
-        //   name: "SC.SplitView",
-        //   view: 'Showcase.viewsPage.splitViews'
-        // }),
+        SC.Object.create({
+          name: "SC.SplitView",
+          view: 'Showcase.viewsPage.splitViews'
+        }),
         SC.Object.create({
           name: "SC.StackedView",
           view: 'Showcase.viewsPage.stackedViews'

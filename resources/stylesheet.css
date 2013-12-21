@@ -382,3 +382,8 @@ $theme.sc-label-view.tab-view {
     background-color: #ff2e2a;
   }
 }
+
+$theme.demo-split-view-label {
+  text-align: center;
+  line-height: 40px;
+}
