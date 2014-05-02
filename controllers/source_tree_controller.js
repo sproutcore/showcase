@@ -34,6 +34,11 @@ Showcase.sources = SC.Object.create(SC.CollectionContent, SC.TreeItemContent, {
           view: 'Showcase.mainPage.demoView'
         }),
         SC.Object.create({
+          appPath: 'http://demos.sproutcore.com/data_drag',
+          name: "Dragging Things In",
+          view: 'Showcase.mainPage.demoView'
+        }),
+        SC.Object.create({
           appPath: 'http://demos.sproutcore.com/big_data_demo',
           name: "Displaying Big Data",
           view: 'Showcase.mainPage.demoView'
