@@ -18,7 +18,7 @@ Showcase.mainPage = SC.Page.design({
     header: SC.View.design({
       layout: { borderBottom: 1, height: 50, zIndex: 999 },
       tagName: 'header',
-      render: function(context, firstTime) {
+      render: function (context, firstTime) {
         context.setAttr('role', 'banner');
         context.push('<div class="container"><h1 id="logo"><a href="http://www.sproutcore.com"><img src="' + sc_static('images/logo.png') + '" alt="SproutCore"></a></h1><nav role="navigation"><ul><li><a href="http://www.sproutcore.com/about/">About</a></li><li class="active"><a href="/">Showcase</a></li><li><a href="http://guides.sproutcore.com">Guides</a></li><li><a href="http://docs.sproutcore.com">Docs</a></li><li><a href="http://www.sproutcore.com/community/">Community</a></li><li><a href="http://blog.sproutcore.com">Blog</a></li></ul></nav></div>');
       }
@@ -59,7 +59,27 @@ Showcase.mainPage = SC.Page.design({
   }),
 
   demoView: SC.WebView.design({
-    valueBinding: SC.Binding.oneWay('Showcase.sourceController.appPath')
+    classNames: ['demo-view'],
+    valueBinding: SC.Binding.oneWay('Showcase.sourceController.appPath'),
+    childViews: ['loading'],
+
+    iframeDidLoad: function () {
+      sc_super();
+
+      this.set('isLoading', false);
+    },
+
+    valueDidChange: function () {
+      this.set('isLoading', true);
+    }.observes('value'),
+
+    loading: SC.LabelView.extend({
+      classNames: ['loading-label'],
+      layout: { centerX: 0, centerY: 0, height: 150, width: 250 },
+      escapeHTML: false,
+      isVisibleBinding: SC.Binding.oneWay('.parentView.isLoading'),
+      value: "Loading Demo Application&hellip;"
+    })
   })
 
 });

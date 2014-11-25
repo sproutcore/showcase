@@ -34,8 +34,13 @@ Showcase.sources = SC.Object.create(SC.CollectionContent, SC.TreeItemContent, {
           view: 'Showcase.mainPage.demoView'
         }),
         SC.Object.create({
+          appPath: 'http://demos.sproutcore.com/big_data_demo',
+          name: "Big Data Lists",
+          view: 'Showcase.mainPage.demoView'
+        }),
+        SC.Object.create({
           appPath: 'http://demos.sproutcore.com/child_view_layout_demo',
-          name: "Child View Layouts",
+          name: "Child View Layout Plugins",
           view: 'Showcase.mainPage.demoView'
         }),
         SC.Object.create({
@@ -44,18 +49,18 @@ Showcase.sources = SC.Object.create(SC.CollectionContent, SC.TreeItemContent, {
           view: 'Showcase.mainPage.demoView'
         }),
         SC.Object.create({
-          appPath: 'http://demos.sproutcore.com/big_data_demo',
-          name: "Displaying Big Data",
+          appPath: 'http://demos.sproutcore.com/flot_demo',
+          name: "Flot (or other 3rd Party) Integration",
           view: 'Showcase.mainPage.demoView'
         }),
         SC.Object.create({
-          appPath: 'http://demos.sproutcore.com/flot_demo',
-          name: "Flot (or other) Integration",
+          appPath: 'http://demos.sproutcore.com/design_mode_demo',
+          name: "Responsive Design",
           view: 'Showcase.mainPage.demoView'
         }),
         SC.Object.create({
           appPath: 'http://demos.sproutcore.com/lively_view_demo',
-          name: "Transition Plugins",
+          name: "Transition Animation Plugins",
           view: 'Showcase.mainPage.demoView'
         }),
         SC.Object.create({
@@ -217,7 +222,7 @@ Showcase.sourceTreeController = SC.TreeController.create({
   allowsEmptySelection: YES,
 
   /** Update the URL to match the selection. */
-  selectionDidChange: function() {
+  selectionDidChange: function () {
     var content = this.get('content'),
       selection = this.get('selection');
 
@@ -226,7 +231,7 @@ Showcase.sourceTreeController = SC.TreeController.create({
         section;
 
       // Determine which group the selection belongs to.
-      content.get('treeItemChildren').forEach(function(group) {
+      content.get('treeItemChildren').forEach(function (group) {
         if (group.get('treeItemChildren').indexOf(object) >= 0) {
           section = group;
         }

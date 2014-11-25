@@ -71,6 +71,20 @@ $theme.views-item-view {
   }
 }
 
+$theme.demo-view {
+  @include background-image(sc_static('cross.png'), sc_static('pixels.png'), linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,0.5)));
+  background-color: #3a9bee;
+
+  .sc-label-view {
+    &.loading-label {
+      color: white;
+      text-shadow: rgba(0,0,0,0.5) 0 1px 2px;
+      line-height: 45px;
+      font-size: 38px;
+      text-align: center;
+    }
+  }
+}
 
 $theme.welcome-view {
   @include slice('images/pixels.png', $repeat: repeat);
