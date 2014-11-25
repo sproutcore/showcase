@@ -24,11 +24,6 @@ Showcase.sources = SC.Object.create(SC.CollectionContent, SC.TreeItemContent, {
       subpath: 'demos',
       treeItemChildren: [
         SC.Object.create({
-          appPath: 'http://demos.sproutcore.com/design_mode_demo',
-          name: "Design Modes",
-          view: 'Showcase.mainPage.demoView'
-        }),
-        SC.Object.create({
           appPath: 'http://demos.sproutcore.com/images_demo',
           name: "Automatic Image Scaling",
           view: 'Showcase.mainPage.demoView'
