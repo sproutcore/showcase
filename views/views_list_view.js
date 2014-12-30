@@ -14,24 +14,24 @@ Showcase.ViewsListView = SC.ListView.extend({
 
     classNames: ['views-list-view'],
 
-    customRowHeightIndexes: function() {
+    customRowSizeIndexes: function() {
       var content = this.get('content'),
-          customRowHeightIndexes = SC.IndexSet.create();
+          customRowSizeIndexes = SC.IndexSet.create();
 
       for (var i = content.get('length') - 1; i >= 0; i--) {
         if (content.objectAt(i).get('isShowingSnippet')) {
-          customRowHeightIndexes.add(i, 1);
+          customRowSizeIndexes.add(i, 1);
         }
       }
 
-      return customRowHeightIndexes;
-    }.property().idempotent(),
+      return customRowSizeIndexes;
+    }.property(),
 
     exampleHeight: 120,
 
     exampleView: Showcase.ViewsItemView,
 
-    itemHeight: function() {
+    rowSize: function() {
       var exampleHeight = this.get('exampleHeight');
 
       return exampleHeight + 120;
@@ -45,8 +45,8 @@ Showcase.ViewsListView = SC.ListView.extend({
       return null; // select all
     },
 
-    contentIndexRowHeight: function(view, content, contentIndex) {
-      return this.get('rowHeight') + 180;
+    contentIndexRowSize: function(view, content, contentIndex) {
+      return this.get('rowSize') + 180;
     },
 
     createItemView: function(exampleClass, idx, attrs) {
@@ -61,7 +61,7 @@ Showcase.ViewsListView = SC.ListView.extend({
 
       var content = this.content;
       for (var i = content.get('length') - 1; i >= 0; i--) {
-        content.objectAt(i).addObserver('isShowingSnippet', this, this._sclv_customRowHeightIndexesDidChange);
+        content.objectAt(i).addObserver('isShowingSnippet', this, this._sc_customRowSizeIndexesContentDidChange);
       }
     }
 
