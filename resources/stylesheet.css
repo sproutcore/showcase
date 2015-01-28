@@ -10,14 +10,20 @@ $theme.sc-source-list.main-source-list {
   }
 }
 
-$theme.views-list-view {
+$theme.main-detail-view {
   @include background-image(linear-gradient(rgba(255,255,255,0.0), rgba(0,0,0,0.2)));
   background-color: #a1a1a1;
+
+  .sc-scroll-view {
+    @include slice('images/pixels.png', $repeat: repeat);
+    background-color: #8fc4f8;
+  }
+}
+
+$theme.views-list-view {
 }
 
 $theme.views-item-view {
-  @include slice('images/pixels.png', $repeat: repeat);
-  background-color: #8fc4f8;
   border-bottom: 1px solid #5d88b6;
   border-top: 1px solid #a5d1ff;
 
@@ -211,7 +217,6 @@ $theme.sc-list-view.my-list-view {
 
 
 $theme.sc-scroll-view.my-scroll-view {
-  background-color: #ececec;
   border: 1px solid #7f7f7f;
 }
 

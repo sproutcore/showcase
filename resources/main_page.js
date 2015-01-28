@@ -41,6 +41,7 @@ Showcase.mainPage = SC.Page.design({
       }),
 
       detailView: SC.ContainerView.design({
+        classNames: ['main-detail-view'],
         nowShowing: 'Showcase.mainPage.welcomeView',
         nowShowingBinding: SC.Binding.notEmpty('Showcase.sourceController.view', 'Showcase.mainPage.welcomeView')
       })
