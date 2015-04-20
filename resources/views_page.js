@@ -45,8 +45,32 @@ Showcase.viewsPage = SC.Page.create({
           example: "SC.ButtonView.extend({  layout: { width: 100, height: 24, centerX: 0, centerY: 0 },  themeName: 'capsule',  title: 'Click Me'  });"
         }),
         Showcase.ViewsItemContent.create({
+          title: 'Capsule: SC.SMALL_CONTROL_SIZE',
+          example: "SC.ButtonView.extend({  controlSize: SC.SMALL_CONTROL_SIZE,  layout: { width: 80, height: 18, centerX: 0, centerY: 0 },  themeName: 'capsule',  title: 'Click Me'  });"
+        }),
+        Showcase.ViewsItemContent.create({
+          title: 'Capsule: SC.HUGE_CONTROL_SIZE',
+          example: "SC.ButtonView.extend({  controlSize: SC.HUGE_CONTROL_SIZE,  layout: { width: 110, height: 30, centerX: 0, centerY: 0 },  themeName: 'capsule',  title: 'Click Me'  });"
+        }),
+        Showcase.ViewsItemContent.create({
+          title: 'Capsule: SC.JUMBO_CONTROL_SIZE',
+          example: "SC.ButtonView.extend({  controlSize: SC.JUMBO_CONTROL_SIZE,  layout: { width: 130, height: 44, centerX: 0, centerY: 0 },  themeName: 'capsule',  title: 'Click Me'  });"
+        }),
+        Showcase.ViewsItemContent.create({
           title: 'Pointers',
           example: "SC.View.extend({  childViews: ['pointLeftButton', 'pointRightButton'],  pointLeftButton: SC.ButtonView.extend({  layout: { width: 100, height: 24, centerX: -50, centerY: 0 },  themeName: 'point-left',  title: 'Back'  }),  pointRightButton: SC.ButtonView.extend({  layout: { width: 100, height: 24, centerX: 50, centerY: 0 },  themeName: 'point-right',  title: 'Forward'  })  });"
+        }),
+        Showcase.ViewsItemContent.create({
+          title: 'Pointers: SC.SMALL_CONTROL_SIZE',
+          example: "SC.View.extend({  childViews: ['pointLeftButton', 'pointRightButton'],  pointLeftButton: SC.ButtonView.extend({  controlSize: SC.SMALL_CONTROL_SIZE,  layout: { width: 80, height: 18, centerX: -40, centerY: 0 },  themeName: 'point-left',  title: 'Back'  }),  pointRightButton: SC.ButtonView.extend({  controlSize: SC.SMALL_CONTROL_SIZE,  layout: { width: 80, height: 18, centerX: 40, centerY: 0 },  themeName: 'point-right',  title: 'Forward'  })  });"
+        }),
+        Showcase.ViewsItemContent.create({
+          title: 'Pointers: SC.HUGE_CONTROL_SIZE',
+          example: "SC.View.extend({  childViews: ['pointLeftButton', 'pointRightButton'],  pointLeftButton: SC.ButtonView.extend({  controlSize: SC.HUGE_CONTROL_SIZE,  layout: { width: 110, height: 30, centerX: -55, centerY: 0 },  themeName: 'point-left',  title: 'Back'  }),  pointRightButton: SC.ButtonView.extend({  controlSize: SC.HUGE_CONTROL_SIZE,  layout: { width: 110, height: 30, centerX: 55, centerY: 0 },  themeName: 'point-right',  title: 'Forward'  })  });"
+        }),
+        Showcase.ViewsItemContent.create({
+          title: 'Pointers: SC.JUMBO_CONTROL_SIZE',
+          example: "SC.View.extend({  childViews: ['pointLeftButton', 'pointRightButton'],  pointLeftButton: SC.ButtonView.extend({  controlSize: SC.JUMBO_CONTROL_SIZE,  layout: { width: 130, height: 44, centerX: -65, centerY: 0 },  themeName: 'point-left',  title: 'Back'  }),  pointRightButton: SC.ButtonView.extend({  controlSize: SC.JUMBO_CONTROL_SIZE,  layout: { width: 130, height: 44, centerX: 65, centerY: 0 },  themeName: 'point-right',  title: 'Forward'  })  });"
         })
       ]
     })

@@ -24,7 +24,7 @@ Showcase.ViewsItemView = SC.View.extend({
     var owner = this.get('owner'),
         exampleHeight = owner.get('exampleHeight');
 
-    return { left: 60, top: 70, right: 60, height: exampleHeight }
+    return { left: 30, top: 70, right: 30, height: exampleHeight }
   }.property().cacheable(),
 
   /** @private */
