@@ -21,6 +21,10 @@ Showcase.progressViews = SC.ScrollView.design({
       Showcase.ViewsItemContent.create({
         title: 'Indeterminate',
         example: "SC.ProgressView.extend({  layout: { width: 150, height: 20, centerX: 0, centerY: 0 },  isIndeterminate: YES,  isRunning: YES  })"
+      }),
+      Showcase.ViewsItemContent.create({
+        title: 'Indeterminate disabled',
+        example: "SC.ProgressView.extend({  layout: { width: 200, height: 16, centerX: 0, centerY: 0 },  isIndeterminate: YES,  isEnabled: NO  })"
       })
     ]
   })
