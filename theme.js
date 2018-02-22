@@ -16,7 +16,7 @@
 //
 // NOTE: if you want to change the theme this one is based on, don't
 // forget to change the :css_theme property in your buildfile.
-Showcase.Theme = SC.AceTheme.create({
+Showcase.Theme = SC.AkiTheme.create({
   name: 'showcase'
 });
 

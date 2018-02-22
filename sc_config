@@ -1,0 +1,8 @@
+
+BT.AppBuilder.create({
+  title: 'Showcase',
+  name: 'showcase',
+  path: dirname(),
+  theme: 'sproutcore:aki',
+  favicon: 'favicon.ico'
+});
