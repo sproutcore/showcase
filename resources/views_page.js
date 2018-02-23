@@ -45,32 +45,28 @@ Showcase.viewsPage = SC.Page.create({
           example: "SC.ButtonView.extend({  layout: { width: 100, height: 24, centerX: 0, centerY: 0 },  themeName: 'capsule',  title: 'Click Me'  });"
         }),
         Showcase.ViewsItemContent.create({
-          title: 'Capsule: SC.SMALL_CONTROL_SIZE',
-          example: "SC.ButtonView.extend({  controlSize: SC.SMALL_CONTROL_SIZE,  layout: { width: 80, height: 18, centerX: 0, centerY: 0 },  themeName: 'capsule',  title: 'Click Me'  });"
+          title: 'Dark',
+          example: "SC.View.extend({  childViews: ['toggle', 'toggleOn', 'toggleOff'],  toggle: SC.ButtonView.extend({  buttonBehavior: SC.TOGGLE_BEHAVIOR,  layout: { width: 120, height: 24, centerX: -135, centerY: 0 },  themeName: 'dark',  title: 'Toggle Me'  }),  toggleOn: SC.ButtonView.extend({  buttonBehavior: SC.TOGGLE_ON_BEHAVIOR,  layout: { width: 120, height: 24, centerX: 0, centerY: 0 },  themeName: 'dark',  title: 'Toggle On',  value: false  }),  toggleOff: SC.ButtonView.extend({  buttonBehavior: SC.TOGGLE_OFF_BEHAVIOR,  layout: { width: 120, height: 24, centerX: 135, centerY: 0 },  themeName: 'dark',  title: 'Toggle Off',  value: true  })  });"
         }),
         Showcase.ViewsItemContent.create({
-          title: 'Capsule: SC.HUGE_CONTROL_SIZE',
-          example: "SC.ButtonView.extend({  controlSize: SC.HUGE_CONTROL_SIZE,  layout: { width: 110, height: 30, centerX: 0, centerY: 0 },  themeName: 'capsule',  title: 'Click Me'  });"
+          title: 'Info',
+          example: "SC.View.extend({  childViews: ['toggle', 'toggleOn', 'toggleOff'],  toggle: SC.ButtonView.extend({  buttonBehavior: SC.TOGGLE_BEHAVIOR,  layout: { width: 120, height: 24, centerX: -135, centerY: 0 },  themeName: 'info',  title: 'Toggle Me'  }),  toggleOn: SC.ButtonView.extend({  buttonBehavior: SC.TOGGLE_ON_BEHAVIOR,  layout: { width: 120, height: 24, centerX: 0, centerY: 0 },  themeName: 'info',  title: 'Toggle On',  value: false  }),  toggleOff: SC.ButtonView.extend({  buttonBehavior: SC.TOGGLE_OFF_BEHAVIOR,  layout: { width: 120, height: 24, centerX: 135, centerY: 0 },  themeName: 'info',  title: 'Toggle Off',  value: true  })  });"
         }),
         Showcase.ViewsItemContent.create({
-          title: 'Capsule: SC.JUMBO_CONTROL_SIZE',
-          example: "SC.ButtonView.extend({  controlSize: SC.JUMBO_CONTROL_SIZE,  layout: { width: 130, height: 44, centerX: 0, centerY: 0 },  themeName: 'capsule',  title: 'Click Me'  });"
+          title: 'Success',
+          example: "SC.View.extend({  childViews: ['toggle', 'toggleOn', 'toggleOff'],  toggle: SC.ButtonView.extend({  buttonBehavior: SC.TOGGLE_BEHAVIOR,  layout: { width: 120, height: 24, centerX: -135, centerY: 0 },  themeName: 'success',  title: 'Toggle Me'  }),  toggleOn: SC.ButtonView.extend({  buttonBehavior: SC.TOGGLE_ON_BEHAVIOR,  layout: { width: 120, height: 24, centerX: 0, centerY: 0 },  themeName: 'success',  title: 'Toggle On',  value: false  }),  toggleOff: SC.ButtonView.extend({  buttonBehavior: SC.TOGGLE_OFF_BEHAVIOR,  layout: { width: 120, height: 24, centerX: 135, centerY: 0 },  themeName: 'success',  title: 'Toggle Off',  value: true  })  });"
+        }),
+        Showcase.ViewsItemContent.create({
+          title: 'Warning',
+          example: "SC.View.extend({  childViews: ['toggle', 'toggleOn', 'toggleOff'],  toggle: SC.ButtonView.extend({  buttonBehavior: SC.TOGGLE_BEHAVIOR,  layout: { width: 120, height: 24, centerX: -135, centerY: 0 },  themeName: 'warning',  title: 'Toggle Me'  }),  toggleOn: SC.ButtonView.extend({  buttonBehavior: SC.TOGGLE_ON_BEHAVIOR,  layout: { width: 120, height: 24, centerX: 0, centerY: 0 },  themeName: 'warning',  title: 'Toggle On',  value: false  }),  toggleOff: SC.ButtonView.extend({  buttonBehavior: SC.TOGGLE_OFF_BEHAVIOR,  layout: { width: 120, height: 24, centerX: 135, centerY: 0 },  themeName: 'warning',  title: 'Toggle Off',  value: true  })  });"
+        }),
+        Showcase.ViewsItemContent.create({
+          title: 'Danger',
+          example: "SC.View.extend({  childViews: ['toggle', 'toggleOn', 'toggleOff'],  toggle: SC.ButtonView.extend({  buttonBehavior: SC.TOGGLE_BEHAVIOR,  layout: { width: 120, height: 24, centerX: -135, centerY: 0 },  themeName: 'danger',  title: 'Toggle Me'  }),  toggleOn: SC.ButtonView.extend({  buttonBehavior: SC.TOGGLE_ON_BEHAVIOR,  layout: { width: 120, height: 24, centerX: 0, centerY: 0 },  themeName: 'danger',  title: 'Toggle On',  value: false  }),  toggleOff: SC.ButtonView.extend({  buttonBehavior: SC.TOGGLE_OFF_BEHAVIOR,  layout: { width: 120, height: 24, centerX: 135, centerY: 0 },  themeName: 'danger',  title: 'Toggle Off',  value: true  })  });"
         }),
         Showcase.ViewsItemContent.create({
           title: 'Pointers',
           example: "SC.View.extend({  childViews: ['pointLeftButton', 'pointRightButton'],  pointLeftButton: SC.ButtonView.extend({  layout: { width: 100, height: 24, centerX: -50, centerY: 0 },  themeName: 'point-left',  title: 'Back'  }),  pointRightButton: SC.ButtonView.extend({  layout: { width: 100, height: 24, centerX: 50, centerY: 0 },  themeName: 'point-right',  title: 'Forward'  })  });"
-        }),
-        Showcase.ViewsItemContent.create({
-          title: 'Pointers: SC.SMALL_CONTROL_SIZE',
-          example: "SC.View.extend({  childViews: ['pointLeftButton', 'pointRightButton'],  pointLeftButton: SC.ButtonView.extend({  controlSize: SC.SMALL_CONTROL_SIZE,  layout: { width: 80, height: 18, centerX: -40, centerY: 0 },  themeName: 'point-left',  title: 'Back'  }),  pointRightButton: SC.ButtonView.extend({  controlSize: SC.SMALL_CONTROL_SIZE,  layout: { width: 80, height: 18, centerX: 40, centerY: 0 },  themeName: 'point-right',  title: 'Forward'  })  });"
-        }),
-        Showcase.ViewsItemContent.create({
-          title: 'Pointers: SC.HUGE_CONTROL_SIZE',
-          example: "SC.View.extend({  childViews: ['pointLeftButton', 'pointRightButton'],  pointLeftButton: SC.ButtonView.extend({  controlSize: SC.HUGE_CONTROL_SIZE,  layout: { width: 110, height: 30, centerX: -55, centerY: 0 },  themeName: 'point-left',  title: 'Back'  }),  pointRightButton: SC.ButtonView.extend({  controlSize: SC.HUGE_CONTROL_SIZE,  layout: { width: 110, height: 30, centerX: 55, centerY: 0 },  themeName: 'point-right',  title: 'Forward'  })  });"
-        }),
-        Showcase.ViewsItemContent.create({
-          title: 'Pointers: SC.JUMBO_CONTROL_SIZE',
-          example: "SC.View.extend({  childViews: ['pointLeftButton', 'pointRightButton'],  pointLeftButton: SC.ButtonView.extend({  controlSize: SC.JUMBO_CONTROL_SIZE,  layout: { width: 130, height: 44, centerX: -65, centerY: 0 },  themeName: 'point-left',  title: 'Back'  }),  pointRightButton: SC.ButtonView.extend({  controlSize: SC.JUMBO_CONTROL_SIZE,  layout: { width: 130, height: 44, centerX: 65, centerY: 0 },  themeName: 'point-right',  title: 'Forward'  })  });"
         })
       ]
     })
@@ -266,23 +262,7 @@ Showcase.viewsPage = SC.Page.create({
 
   webViews: Showcase.webViews,
 
-  wellViews: SC.ScrollView.design({
-    contentView: Showcase.ViewsListView.design({
-      content: [
-        Showcase.ViewsItemContent.create({
-          title: 'Regular',
-          example: "SC.WellView.extend({  layout: { left: 20, right: 20, top: 20, bottom: 20 },  nowShowing: 'blueSampleView',  blueSampleView: SC.LabelView.extend({  classNames:['blue-sample-view'],  value: 'Blue View'  }),  redSampleView: SC.LabelView.extend({  classNames:['red-sample-view'],  value: 'Red View'  })  });",
-          supportAction: function() {
-            var containerView = this.getPath('parentView.exampleBox.contentView');
-            if (containerView.get('nowShowing') === 'blueSampleView') containerView.set('nowShowing', 'redSampleView');
-            else containerView.set('nowShowing', 'blueSampleView');
-          },
-          supportTitle: 'Toggle nowShowing'
-        })
-      ],
-      exampleHeight: 315
-    })
-  }),
+  wellViews: Showcase.wellViews,
 
   workspaceViews: Showcase.workspaceViews
 

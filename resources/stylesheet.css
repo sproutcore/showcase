@@ -2,28 +2,22 @@
 @import "compass/css3/user-interface";
 
 
-$theme.sc-source-list.main-source-list {
-  background-color: #FFF;
-
-  .sc-collection-item.even {
-    background-color: #F7F7F7;
-  }
-}
-
 $theme.main-detail-view {
-  @include background-image(linear-gradient(rgba(255,255,255,0.0), rgba(0,0,0,0.2)));
-  background-color: #a1a1a1;
+  background: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,0.2));
 
   .sc-scroll-view {
-    @include slice('images/pixels.png', $repeat: repeat);
+    background-image: sc_static('images/pixels.png');
+    background-repeat: repeat;
     background-color: #8fc4f8;
   }
 }
 
 $theme.views-list-view {
+  background: transparent;
 }
 
 $theme.views-item-view {
+  background: transparent;
   border-bottom: 1px solid #5d88b6;
   border-top: 1px solid #a5d1ff;
 
@@ -78,8 +72,7 @@ $theme.views-item-view {
 }
 
 $theme.demo-view {
-  @include background-image(sc_static('cross.png'), sc_static('pixels.png'), linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,0.5)));
-  background-color: #3a9bee;
+  background: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,0.2));
 
   .sc-label-view {
     &.loading-label {
@@ -93,7 +86,8 @@ $theme.demo-view {
 }
 
 $theme.welcome-view {
-  @include slice('images/pixels.png', $repeat: repeat);
+  background-image: sc_static('images/pixels.png');
+  background-repeat: repeat;
   background-color: #8fc4f8;
   bottom: 0;
   left: 0;
