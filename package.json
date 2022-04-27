@@ -1,0 +1,22 @@
+{
+  "name": "sproutcore_showcase",
+  "devDependencies": {
+    "compass-mixins-fixed": "^1.0.1",
+    "css-loader": "^5.1.2",
+    "css-minimizer-webpack-plugin": "^3.4.1",
+    "exports-loader": "^2.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "imports-loader": "^2.0.0",
+    "mini-css-extract-plugin": "^1.6.2",
+    "sass": "^1.33.0",
+    "sass-loader": "^11.1.0",
+    "sproutcore": "sproutcore/sproutcore#team/ml/webpack",
+    "webpack": "^5.71.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "scripts": {
+    "start": "node_modules/.bin/webpack serve",
+    "build": "node_modules/.bin/webpack --mode=production"
+  }
+}
