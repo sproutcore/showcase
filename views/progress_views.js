@@ -16,7 +16,7 @@ Showcase.progressViews = SC.ScrollView.design({
     content: [
       Showcase.ViewsItemContent.create({
         title: 'Regular',
-        example: "SC.ProgressView.extend({  layout: { width: 150, height: 20, centerX: 0, centerY: 0 },  increment: function() {  this.incrementProperty('value', 0.01);  if (this.get('value') > 1.25) { this.set('value', 0); }  },  init: function() {  sc_super();  SC.Timer.schedule({  action: 'increment', target: this, interval: 30, repeats: true  });  }  })"
+        example: "SC.ProgressView.extend({  layout: { width: 150, height: 20, centerX: 0, centerY: 0 },  increment: function() {  this.incrementProperty('value', 0.01);  if (this.get('value') > 1.25) { this.set('value', 0); }  },  init: function init () {  init.base.apply(this, arguments);  SC.Timer.schedule({  action: 'increment', target: this, interval: 30, repeats: true  });  }  })"
       }),
       Showcase.ViewsItemContent.create({
         title: 'Indeterminate',
