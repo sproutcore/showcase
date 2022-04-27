@@ -50,6 +50,7 @@ Showcase.ViewsItemContent = SC.Object.extend({
     // example = el.textContent || el.innerText;
 
     // Return the JavaScript interpretation.
+    example = example.replace(/require\('(.+?)'\)/g, "window.SHOWCASE_IMGS['$1']");
     return eval(example);
   }.property().cacheable(),
 
