@@ -1,8 +1,8 @@
 @import "compass/css3";
 @import "compass/css3/user-interface";
+@import "./theme";
 
-
-$theme.main-detail-view {
+#{$theme}.main-detail-view {
   background: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,0.2));
 
   .sc-scroll-view {
@@ -12,17 +12,25 @@ $theme.main-detail-view {
   }
 }
 
-$theme.views-list-view {
+#{$theme}.views-list-view {
   background: transparent;
 }
 
-$theme.views-item-view {
+#{$theme}.views-item-view {
   background: transparent;
   border-bottom: 1px solid #5d88b6;
   border-top: 1px solid #a5d1ff;
 
   &.last-item {
     @include box-shadow(rgba(0,0,0,0.3) 0px 4px 10px 0px);
+  }
+
+  &.sc-collection-item {
+    background: transparent;
+  }
+
+  &.sc-list-item-view {
+    background: transparent;
   }
 
   .example-box {
@@ -71,7 +79,7 @@ $theme.views-item-view {
   }
 }
 
-$theme.demo-view {
+#{$theme}.demo-view {
   background: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,0.2));
 
   .sc-label-view {
@@ -85,7 +93,7 @@ $theme.demo-view {
   }
 }
 
-$theme.welcome-view {
+#{$theme}.welcome-view {
   background-image: sc_static('images/pixels.png');
   background-repeat: repeat;
   background-color: #8fc4f8;
@@ -127,14 +135,14 @@ $theme.welcome-view {
 }
 
 
-$theme.grid-example-view {
+#{$theme}.grid-example-view {
   .sc-label-view {
     text-align: center;
   }
 }
 
 
-$theme.sc-image-button-view.my-image-button {
+#{$theme}.sc-image-button-view.my-image-button {
   @include border-radius(4px);
   @include box-shadow(rgba(0,0,0,0.3) 0px 1px 3px);
   background-color: #ececec;
@@ -151,13 +159,13 @@ $theme.sc-image-button-view.my-image-button {
 }
 
 
-$theme.sc-image-view.my-image-view {
+#{$theme}.sc-image-view.my-image-view {
   background-color: #ececec;
   border: 1px solid #7f7f7f;
 }
 
 
-$theme.sc-label-view.my-label-view {
+#{$theme}.sc-label-view.my-label-view {
   text-align: center;
 
   .icon {
@@ -195,7 +203,7 @@ $theme.sc-label-view.my-label-view {
 }
 
 
-$theme.sc-list-view.my-list-view {
+#{$theme}.sc-list-view.my-list-view {
   .sc-list-item-view .icon {
     margin-top: -12px;
   }
@@ -210,11 +218,11 @@ $theme.sc-list-view.my-list-view {
 }
 
 
-$theme.sc-scroll-view.my-scroll-view {
+#{$theme}.sc-scroll-view.my-scroll-view {
   border: 1px solid #7f7f7f;
 }
 
-$theme.sc-static-content-view.my-static-content-view {
+#{$theme}.sc-static-content-view.my-static-content-view {
   background-color: rgba(255,255,255,0.7);
   border: 1px solid #7f7f7f;
   position: absolute; left: 20px; bottom: 20px; right: 20px; top: 20px;
@@ -256,13 +264,13 @@ $theme.sc-static-content-view.my-static-content-view {
 }
 
 
-$theme.sc-web-view.my-web-view {
+#{$theme}.sc-web-view.my-web-view {
   background-color: #fff;
   border: 1px solid #7f7f7f;
 }
 
 
-$theme.sc-stacked-view.my-stacked-view {
+#{$theme}.sc-stacked-view.my-stacked-view {
   .sc-collection-item {
     background-color: #bee8bc;
     border-bottom: 1px solid #9dc09c;
@@ -273,13 +281,13 @@ $theme.sc-stacked-view.my-stacked-view {
 }
 
 
-$theme.sc-text-field-view.my-password-field {
+#{$theme}.sc-text-field-view.my-password-field {
   font-size: 28px;
   line-height: 48px;
 }
 
 
-$theme.sc-view.my-view {
+#{$theme}.sc-view.my-view {
   background-color: #fff;
   border: 1px solid #7f7f7f;
 
@@ -289,7 +297,7 @@ $theme.sc-view.my-view {
 }
 
 
-$theme.sc-workspace-view.my-workspace-view {
+#{$theme}.sc-workspace-view.my-workspace-view {
   background-color: #fff;
   border: 1px solid #7f7f7f;
 
@@ -307,7 +315,7 @@ $theme.sc-workspace-view.my-workspace-view {
   }
 }
 
-$theme.sc-label-view.blue-sample-view {
+#{$theme}.sc-label-view.blue-sample-view {
   background-color: #8de1ff;
   color: white;
   font-size: 60px;
@@ -316,7 +324,7 @@ $theme.sc-label-view.blue-sample-view {
   text-shadow: rgba(0,0,0,0.3) 0px 1px 2px;
 }
 
-$theme.sc-label-view.red-sample-view {
+#{$theme}.sc-label-view.red-sample-view {
   background-color: #ff6d7a;
   color: white;
   font-size: 60px;
@@ -325,7 +333,7 @@ $theme.sc-label-view.red-sample-view {
   text-shadow: rgba(0,0,0,0.4) 0px 1px 2px;
 }
 
-$theme.sc-label-view.yellow-sample-view {
+#{$theme}.sc-label-view.yellow-sample-view {
   background-color: #ffe72b;
   color: white;
   font-size: 60px;
@@ -334,7 +342,7 @@ $theme.sc-label-view.yellow-sample-view {
   text-shadow: rgba(0,0,0,0.4) 0px 1px 2px;
 }
 
-$theme.sc-label-view.dark-green-sample-view {
+#{$theme}.sc-label-view.dark-green-sample-view {
   background-color: #57dc4b;
   color: white;
   font-size: 60px;
@@ -343,7 +351,7 @@ $theme.sc-label-view.dark-green-sample-view {
   text-shadow: rgba(0,0,0,0.4) 0px 1px 2px;
 }
 
-$theme.sc-label-view.green-sample-view {
+#{$theme}.sc-label-view.green-sample-view {
   background-color: #a9ff85;
   color: white;
   font-size: 60px;
@@ -352,7 +360,7 @@ $theme.sc-label-view.green-sample-view {
   text-shadow: rgba(0,0,0,0.4) 0px 1px 2px;
 }
 
-$theme.sc-label-view.pink-sample-view {
+#{$theme}.sc-label-view.pink-sample-view {
   background-color: #fdaeff;
   color: white;
   font-size: 60px;
@@ -361,7 +369,7 @@ $theme.sc-label-view.pink-sample-view {
   text-shadow: rgba(0,0,0,0.4) 0px 1px 2px;
 }
 
-$theme.sc-label-view.tab-view {
+#{$theme}.sc-label-view.tab-view {
   background-color: #fdaeff;
   color: white;
   font-size: 40px;
@@ -396,7 +404,7 @@ $theme.sc-label-view.tab-view {
   }
 }
 
-$theme.demo-split-view-label {
+#{$theme}.demo-split-view-label {
   text-align: center;
   line-height: 40px;
 }
