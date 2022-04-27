@@ -5,6 +5,13 @@
 // ==========================================================================
 /*global Showcase */
 
+window.SHOWCASE_IMGS = {
+  'images/green-dot.png': sc_static('images/green-dot.png'),
+  './images/sproutcore-128.png': sc_static('sproutcore-128.png'),
+  './images/sproutcore-512.png': sc_static('sproutcore-512.png'),
+};
+
+
 
 Showcase.viewsPage = SC.Page.create({
 
