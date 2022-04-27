@@ -25,4 +25,4 @@ Showcase.main = function main() {
   SC.routes.add(':section/:key', Showcase, Showcase.route);
 };
 
-function main() { Showcase.main(); }
+window.main = function main() { Showcase.main(); }
